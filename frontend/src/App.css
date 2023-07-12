@@ -1,0 +1,19 @@
+:root {
+    --darkpurple: #51415A;
+    --purple: #B592AD;
+    --lightpurple: #EFE8EE;
+    /*highlight images in order list*/
+    --grey: #e5e5e5;
+    /*can be used for interface background*/
+    --lightgrey: #f7f7f7;
+    --darkgrey: #6a6a6a;
+    --text: #121212;
+    --lighttext: #3e3e3e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
