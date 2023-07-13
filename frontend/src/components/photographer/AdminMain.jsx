@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Form, FormControl, Button, Nav } from 'react-bootstrap';
+import { Navbar, Form, FormControl, Button, Nav, Container, Row, Col } from 'react-bootstrap';
 import './photographer.css';
 import {
   CDBSidebar,
@@ -13,9 +13,6 @@ import AdminNavbar from './AdminNavbar';
 import Sidebar from './Sidebar';
 
 
-
-
-
 const SidebarButton = ({ children }) => {
   return (
     <div className="sidebar-button-wrapper">
@@ -26,15 +23,15 @@ const SidebarButton = ({ children }) => {
 
 const AdminMain = () => {
   return (
-    <div style={{ display: 'flex', height: '100vh' }}>
+    <div className="admin-container">
 
-      
+<AdminNavbar />
+<Sidebar /> 
 
-      <Sidebar />
-      < AdminNavbar />
-     
+
     </div>
   );
 };
 
 export default AdminMain;
+ 

@@ -8,7 +8,7 @@ import LoginPage from './components/photographer/LoginPage';
 import AdminMain from './components/photographer/AdminMain'; 
 import LoginNavbar from './components/photographer/LoginNavbar';
 import LoginMain from './components/photographer/LoginMain';
-
+import ClientModal from './components/photographer/ClientModal';
 
 function App() {
 
@@ -22,9 +22,9 @@ function App() {
 <LoginPage /> */}
 
 
-
-
-< AdminMain />
+{/* 
+<ClientModal /> */}
+{/* < AdminMain /> */}
 {/* <AdminNavbar />  */}
 {/* <SideBar /> */}
 
