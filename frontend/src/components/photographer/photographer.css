@@ -67,3 +67,57 @@
     .boxColor {
       background-color: var(--darklightpurple);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+/*GalleryModal*/
+.custom-modal .modal-content {
+  width: 150% !important;
+  height: 150% !important;
+  margin-left: -25% !important;
+  margin-right: -25% !important;
+  border-radius: 0;
+}
+
+.dropdownbox {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 0px;
+}
+
+.nameform {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 0px;
+}
+
+.modalheader {
+  background-color: var(--darkpurple);
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 0;
+}
+
+.border-square {
+  border-radius: 0;
+}
+
+.modalbutton {
+   background-color: var(--purple);
+   color: black;
+   border: none;
+   border-radius: 0;
+   margin-top: 2%;
+   margin-bottom: 2%;
+ }
