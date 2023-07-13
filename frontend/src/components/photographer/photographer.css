@@ -18,9 +18,6 @@
 
 
 
-
-
-
    /*Sidebar*/
    .sidebar-button-wrapper {
       color: black;
@@ -111,6 +108,7 @@
 
 .border-square {
   border-radius: 0;
+  border: none;
 }
 
 .modalbutton {
@@ -121,3 +119,35 @@
    margin-top: 2%;
    margin-bottom: 2%;
  }
+
+
+
+ /*LoginPage.jsx*/ 
+ .photo-section {
+   background-color: aqua;
+   height: 100vh;
+   background-image: url(/assets/1_tn.jpg);
+   background-repeat: no-repeat ;
+   background-size: cover;
+
+ }
+ 
+ .login-section {
+   background-color: rgb(255, 255, 255);
+   height: 100vh;
+ }
+ 
+ .loginbox {
+   padding: 0;
+ }
+ 
+ .col-no-padding {
+   padding-left: 0;
+   padding-right: 0;
+  
+ }
+
+ .test {
+   width: 60%;
+ }
+

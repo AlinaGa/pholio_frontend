@@ -2,9 +2,14 @@ import React from 'react';
 import { Navbar, Form, FormControl, Button, Nav } from 'react-bootstrap';
 import './photographer.css';
 
+
 const AdminNavbar = () => {
   return (
-    <Navbar expand="lg" className="NavBackground">
+
+    <>
+
+
+        <Navbar expand="lg" className="NavBackground">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Form inline>
@@ -18,6 +23,11 @@ const AdminNavbar = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+
+</>
+
+
+
   );
 };
 
