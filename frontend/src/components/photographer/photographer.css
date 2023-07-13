@@ -39,6 +39,7 @@
    .sidebar-button-text {
       padding-top: 4em;
       color: black;
+      text-align: center;
       
    }
 
@@ -124,12 +125,10 @@
 
  /*LoginPage.jsx*/ 
  .photo-section {
-   background-color: aqua;
    height: 100vh;
    background-image: url(/assets/1_tn.jpg);
    background-repeat: no-repeat ;
    background-size: cover;
-
  }
  
  .login-section {
@@ -151,3 +150,10 @@
    width: 60%;
  }
 
+
+ /*login Navbar*/
+ .Login-NavBackground {
+   background-color: var(--lightgrey);
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+ }

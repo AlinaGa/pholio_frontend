@@ -1,19 +1,22 @@
+// AdminNavbar.jsx
+
 import React from 'react';
 import { Navbar, Form, FormControl, Button, Nav } from 'react-bootstrap';
 import './photographer.css';
 
-
 const AdminNavbar = () => {
   return (
-
-    <>
-
-
-        <Navbar expand="lg" className="NavBackground">
+    <div style={{ flex: '1' }}>
+    <Navbar expand="lg" className="NavBackground">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2 SearchBox mx-2 border-0" style={{ width: '500px' }} />
+          <FormControl
+            type="text"
+            placeholder="Search"
+            className="mr-sm-2 SearchBox mx-2 border-0"
+            style={{ width: '500px' }}
+          />
         </Form>
         <Button variant="btn" className='mx-3 Admin-button'>Search</Button>
         <Nav>
@@ -23,12 +26,10 @@ const AdminNavbar = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-
-</>
-
-
-
+  </div>
   );
 };
 
 export default AdminNavbar;
+
+
