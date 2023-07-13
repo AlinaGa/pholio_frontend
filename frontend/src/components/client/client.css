@@ -145,3 +145,8 @@ button {
     max-height: 300px;
     margin: 5px;
 }
+
+.selectedimg {
+    border: 10px solid var(--sage);
+
+}

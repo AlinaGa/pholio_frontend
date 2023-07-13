@@ -8,7 +8,7 @@ const ShopImage = () => {
     return (
         <>
             <img className="shopimage" src="..\src\assets\1_tn.jpg" />
-            <img className="shopimage" src="..\src\assets\2_tn.jpg" />
+            <img className="shopimage selectedimg" src="..\src\assets\2_tn.jpg" />
             <img className="shopimage" src="..\src\assets\3_tn.jpg" />
             <img className="shopimage" src="..\src\assets\11_tn.jpg" />
             <img className="shopimage" src="..\src\assets\5_tn.jpg" />
