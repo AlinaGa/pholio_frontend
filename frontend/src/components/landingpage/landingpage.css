@@ -1,0 +1,207 @@
+body {
+    font-family: 'Roboto';
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Roboto';
+}
+
+/* navbar section */
+.NavBackground {
+      background-color: var(--darkpurple);
+   }
+   
+   .SearchBox {
+      background-color: var(--darklightpurple);
+      border-radius: 0;
+
+   }
+   
+   .Admin-button {
+      background-color: var(--purple); 
+      color: black;
+      border-radius: 10px; 
+   }
+
+   /* the top section after navbar */
+.head-section {
+    padding-top: 18rem !important; 
+    height: 50rem;
+    background-image: url('../../assets/8_tn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+   
+}
+
+  
+.middle-title {
+    padding-top: 10rem !important; 
+    height: 25rem;
+    background-image: url('../../assets/banner.jpg');
+    background-position: -1rem -15rem;
+    color: white;
+}
+
+.body-desc {
+    height: 50vh;
+    position: relative;
+}
+
+/* featutes/dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 5rem ;
+    width: 80%;
+    margin-left: 10rem;
+}
+
+
+/* middle part with the galleries */
+.shop, .albums {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: no-wrap;
+}
+
+.galleries,.client {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: no-wrap;
+    align-items: center;
+} 
+
+/* the testimonials */
+.whyPholio {
+    text-decoration: none!important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem;
+ 
+}
+.responsive-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 5rem 5rem ;
+    
+}
+.responsive-par {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5rem;
+
+}
+.design-ul {
+    width: 80%;
+    position: relative;
+}
+/* the beginning of the testphase */
+.test-phase {
+    height: 40vh;
+    background-image: url('../../assets/18_tn.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    margin-top: 5rem;
+    position: relative;
+    color: white;
+}
+.testImg {
+    border-radius: 50%;
+    position: relative;
+    height: 60vh;
+}
+
+.containerDiv,.responsive-sec {
+    width: 70%;
+    margin-left: 12rem;
+    font-family: 'Roboto';
+}
+
+/* the footer secion */
+.footer {
+    background-color: var(--darkpurple);
+    color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20rem;
+    padding: 5rem;
+    font-size: 2rem;
+}
+.subscription {
+    margin-right: 20rem;
+}
+@media only screen and (max-width: 600px) {
+   
+       .shop, .albums, .galleries,.client {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      
+    } 
+    .containerDiv,.responsive-sec {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer {
+        background-color: var(--darkpurple);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+     
+        
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-left: 0;
+
+        
+    }
+    .subscription {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15rem;
+        padding: 2px;
+    }
+    .test-phase {
+        height: 40vh;
+        background-image: url('../../assets/18_tn.jpg');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+   
+     
+  } 
