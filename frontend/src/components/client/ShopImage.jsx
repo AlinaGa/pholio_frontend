@@ -27,7 +27,7 @@ const ShopImage = () => {
             <img className="shopimage" src="..\src\assets\12_tn.jpg" />
             <img className="shopimage" src="..\src\assets\17_tn.jpg" />
             <img className="shopimage" src="..\src\assets\18_tn.jpg" />
-            <img className="shopimage" src="..\src\assets\19_tn.jpg" />
+            <img className="shopimage" src="..\src\assets\19_tn.jpg" /> 
             <img className="shopimage" src="..\src\assets\20_tn.jpg" />
         </>
     )

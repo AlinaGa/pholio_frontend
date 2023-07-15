@@ -13,15 +13,13 @@ function App() {
     // <AlbumList />
     <Shop />
 
-
-    
     //   <Routes>
     //     <Route path="/" element={<Login />} />
     //     {/* <Route path="/:photographerId/*" element={<ClientLogin />} /> */}
     //     {/* <Route path="/:photographerId/:clientId" element={<AlbumList />} /> */}
     //     {/* <Route path="/:photographerId/:clientId/:galleryId" element={<SpecificGallery />} /> */}
     //   </Routes>
-    
+
   )
 }
 
