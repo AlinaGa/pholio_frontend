@@ -1,6 +1,8 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import LandingPage from "./components/landingpage/Landingpage";
+import "../src/components/landingpage/Landingpage.css";
+import "./App.css";
 import { useState } from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';  
 import AdminNavbar from './components/photographer/AdminNavbar';
 import SideBar from './components/photographer/Sidebar';
 import GalleryModal from './components/photographer/GalleryModal';
@@ -11,9 +13,11 @@ import LoginMain from './components/photographer/LoginMain';
 import ClientModal from './components/photographer/ClientModal';
 
 function App() {
-
   return (
-<>
+
+    <>
+      <LandingPage />
+
 
 
 {/* <LoginMain />  */}
@@ -30,21 +34,13 @@ function App() {
 
 
 
-
-
 {/* < GalleryModal /> */}
 
 
 
 
-
-
-
-
-
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
