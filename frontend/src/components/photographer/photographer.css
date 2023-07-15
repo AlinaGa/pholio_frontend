@@ -1,3 +1,69 @@
-button {
-    color: var(--purple);
-}
+   /*AdminNavbar*/
+   .NavBackground {
+      background-color: var(--darkpurple);
+   }
+   
+   .SearchBox {
+      background-color: var(--darklightpurple);
+      border-radius: 0;
+
+   }
+   
+   .Admin-button {
+      background-color: var(--purple); 
+      color: black;
+      border-radius: 10px; 
+   }
+
+
+
+
+
+
+
+   /*Sidebar*/
+   .sidebar-button-wrapper {
+      color: black;
+      padding: 10px;
+      margin-bottom: 5px;
+      transition: background-color 0.3s, color 0.3s;
+   }
+   
+
+   .sidebar-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+   color: black;
+
+   }
+
+   .sidebar-button-text {
+      padding-top: 4em;
+      color: black;
+      
+   }
+
+   .sidebar-button {
+      height: 15px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+   }
+
+   .sidebar-btn-wrapper {
+      color: black;
+      padding: '20px 5px'
+   }
+
+   .sidebar-button-wrapper:hover {
+      background-color: var(--darklightpurple);
+      color: white;
+    }
+
+    .boxColor {
+      background-color: var(--darklightpurple);
+    }
