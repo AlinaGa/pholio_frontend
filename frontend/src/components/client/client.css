@@ -1,0 +1,208 @@
+button {
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: all ease-in-out.2s;
+    border-radius: 3px;
+    margin: 10px 20px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.buttonwhite {
+    background-color: white;
+    color: var(--text);
+    border: none;
+    font-family: 'Roboto';
+}
+
+.infobox {
+    background-color: var(--darkerpurple);
+    color: white;
+    border-radius: 50%;
+}
+
+/* .albumheadingsection {
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightgrey);
+    width: 100vw;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+} */
+
+/*Albumlist & Albums */
+
+.albumlist {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*heading*/
+.yourgalleries {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.card .card-title {
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.album {
+    width: 600px;
+    height: 330px;
+    margin: 3rem 2.5rem;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+
+.albumcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.darkoverlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.album Img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(4px 5px 2px rgba(0, 0, 0, 0.6));
+    /* filter drop-shadow creates a shadow sensitive to the objects edges, not just a box*/
+}
+
+.albumbuttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/*  Shop Gallery */
+
+.galleryheadersection {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.shopbanner {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.galleryname {
+    margin-top: 50px;
+    font-size: 4rem;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+
+}
+
+/* ShopGallery NORMAL Layout STARTS here*/
+.shopimagescontainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shopimage {
+    max-height: 320px;
+    margin: 2px;
+}
+
+/* ShopGallery NORMAL Layout ENDS here*/
+
+
+/* ShopGallery MASONRY Layout STARTS here*/
+
+/* .shopimagescontainer {
+    line-height: 0;
+
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 4px;
+}
+
+.shopimage {
+    width: 100% !important;
+    height: auto !important;
+    margin: 2px;
+} */
+
+/* ShopGallery MASONRY Layout ENDS here*/
+
+.selectedimg {
+    border: 10px solid var(--sage);
+
+}
+
+/*Cart Start */
+.cartsection {}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: var(--lightgrey);
+    width: 40vw;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cart.open {
+    transform: translateX(0);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
