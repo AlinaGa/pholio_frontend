@@ -1,8 +1,13 @@
 :root {
     --darkpurple: #51415A;
+
     --darklightpurple: #877C8D; 
+
+    --darkerpurple: #615568;
+
     --purple: #B592AD;
     --lightpurple: #EFE8EE;
+    --sage: #76bc86;
     /*highlight images in order list*/
     --grey: #e5e5e5;
     /*can be used for interface background*/
