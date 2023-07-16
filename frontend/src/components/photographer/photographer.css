@@ -1,3 +1,187 @@
-button {
-    color: var(--purple);
+   
+   /*AdminNavbar*/
+   .NavBackground {
+      background-color: var(--darkpurple);
+   }
+   
+   .SearchBox {
+      background-color: var(--darklightpurple);
+      border-radius: 0;
+
+   }
+   
+   .Admin-button {
+      background-color: var(--purple); 
+      color: black;
+      border-radius: 10px; 
+   }
+
+
+
+
+   /*Sidebar*/
+   .sidebar-button-wrapper {
+      color: black;
+      padding: 10px;
+      margin-bottom: 5px;
+      transition: background-color 0.3s, color 0.3s;
+   }
+   
+
+   .sidebar-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+   color: black;
+
+   }
+
+   .sidebar-button-text {
+      padding-top: 4em;
+      color: black;
+      text-align: center;
+      
+   }
+
+   .sidebar-button {
+      height: 15px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+   }
+
+   .sidebar-btn-wrapper {
+      color: black;
+      padding: '20px 5px'
+   }
+
+   .sidebar-button-wrapper:hover {
+      background-color: var(--darklightpurple);
+      color: white;
+    }
+
+    .boxColor {
+      background-color: var(--darklightpurple);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/*GalleryModal*/
+.custom-modal .modal-content {
+  width: 150% !important;
+  height: 150% !important;
+  margin-left: -25% !important;
+  margin-right: -25% !important;
+  border-radius: 0;
 }
+
+.dropdownbox {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 0px;
+}
+
+.nameform {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 0px;
+}
+
+.modalheader {
+  background-color: var(--darkpurple);
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 0;
+}
+
+.border-square {
+  border-radius: 0;
+  border: none;
+}
+
+.modalbutton {
+   background-color: var(--purple);
+   color: black;
+   border: none;
+   border-radius: 0;
+   margin-top: 2%;
+   margin-bottom: 2%;
+ }
+
+
+
+ /*LoginPage.jsx*/ 
+ .photo-section {
+   height: 100vh;
+   background-image: url(/assets/1_tn.jpg);
+   background-repeat: no-repeat ;
+   background-size: cover;
+ }
+ 
+ .login-section {
+   background-color: rgb(255, 255, 255);
+   height: 100vh;
+ }
+ 
+ .loginbox {
+   padding: 0;
+ }
+ 
+ .col-no-padding {
+   padding-left: 0;
+   padding-right: 0;
+  
+ }
+
+ .test {
+   width: 60%;
+ }
+
+
+ /*login Navbar*/
+ .Login-NavBackground {
+   background-color: var(--lightgrey);
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+ }
+
+
+ .sidebar {
+   padding: 0;
+   height: 100vh;
+ }
+
+
+
+ /*order list*/
+
+ .order-card {
+   border: 1px solid black;
+   width: 20%;
+   width: 15em;
+   height: 100%;
+ }
+
+.profilebox{
+margin-top: 5%;
+}
+
+
+ .order-list {
+   width: 70%;
+   padding-top: 10%;
+ }
