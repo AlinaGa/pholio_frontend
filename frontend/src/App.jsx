@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import LandingPage from "./components/landingpage/Landingpage";
+import LandingPage from "./pages/landingpage/Landingpage";
 import { useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 
@@ -9,7 +9,7 @@ import GalleryModal from './components/photographer/GalleryModal';
 import LoginPage from './components/photographer/LoginPage';
 import AdminMain from './components/photographer/AdminMain';
 import LoginNavbar from './components/photographer/LoginNavbar';
-import LoginMain from './components/photographer/LoginMain';
+import LoginMain from './pages/landingpage/LoginPhotographer';
 import ClientModal from './components/photographer/ClientModal';
 
 
@@ -27,14 +27,14 @@ function App() {
 
     <>
       {/* <LandingPage /> */}
-      <AlbumList /> 
-      {/* <Shop /> */}
+      {/* <AlbumList />  */}
+      {/* <Shop />  */}
 
 
-      {/* <LoginMain />  */}
-      {/* 
-< LoginNavbar />
-<LoginPage /> */}
+      <LoginMain />  
+
+      {/* < LoginNavbar />
+      <LoginPage /> */}
 
 
       {/* 
@@ -48,10 +48,10 @@ function App() {
       {/* < GalleryModal /> */}
 
       {/* <Routes> */}
-        {/* <Route path="/" element={<Login />} /> */}
-        {/* <Route path="/:photographerId/*" element={<ClientLogin />} /> */}
-        {/* <Route path="/:photographerId/:clientId" element={<AlbumList />} /> */}
-        {/* <Route path="/:photographerId/:clientId/:galleryId" element={<SpecificGallery />} /> */}
+      {/* <Route path="/" element={<Login />} /> */}
+      {/* <Route path="/:photographerId/*" element={<ClientLogin />} /> */}
+      {/* <Route path="/:photographerId/:clientId" element={<AlbumList />} /> */}
+      {/* <Route path="/:photographerId/:clientId/:galleryId" element={<SpecificGallery />} /> */}
       {/* </Routes> */}
 
 

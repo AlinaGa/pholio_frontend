@@ -8,10 +8,10 @@ import shop from "../../assets/shop.jpg";
 import galleries from "../../assets/galleries.jpg";
 import albums from "../../assets/albums.jpg";
 import laptop from "../../assets/laptop.png";
-import "./Landingpage.css";
+import "../../components/landingpage/landingpage.css";
 import "../../App.css";
-import Footer from "./footer";
-import LandingNavbar from "./landingNavbar";
+import Footer from "../../components/landingpage/footer";
+import LandingNavbar from "../../components/landingpage/landingNavbar";
 
 const LandingPage = () => {
   return (
