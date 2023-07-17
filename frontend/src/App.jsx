@@ -11,7 +11,7 @@ import AdminMain from './components/photographer/AdminMain';
 import LoginNavbar from './components/photographer/LoginNavbar';
 import LoginMain from './pages/landingpage/LoginPhotographer';
 import ClientModal from './components/photographer/ClientModal';
-
+import LoginClient from "./pages/clientpages/LoginClient";
 
 import AlbumList from './pages/clientpages/AlbumList';
 import Shop from './pages/clientpages/Shop';
@@ -26,26 +26,27 @@ function App() {
 
 
     <>
-      {/* <LandingPage /> */}
-      {/* <AlbumList />  */}
+       <LandingPage />
+
+
+      {/* <LoginClient /> */}
+      {/* <AlbumList /> */}
       {/* <Shop />  */}
 
 
-      <LoginMain />  
-
+      {/* <LoginMain />   */}
       {/* < LoginNavbar />
       <LoginPage /> */}
-
 
       {/* 
 <ClientModal /> */}
       {/* < AdminMain /> */}
       {/* <AdminNavbar />  */}
       {/* <SideBar /> */}
-
-
-
       {/* < GalleryModal /> */}
+
+
+
 
       {/* <Routes> */}
       {/* <Route path="/" element={<Login />} /> */}

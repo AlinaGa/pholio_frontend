@@ -1,11 +1,12 @@
 import React from 'react';
 import Album from '../../components/client/album';
+import ClientNavbar from '../../components/client/ClientNavbar';
 import '../../components/client/client.css';
 import InfoBox from '../../components/client/Infobox';
 
 const AlbumList = () => {
     return (<>
-        {/* <Navbar /> */}
+        <ClientNavbar />
         <div className='albumlist'>
             <section className='albumheadingsection'>
                 <h1 className='yourgalleries'>Your Galleries</h1>
@@ -17,7 +18,7 @@ const AlbumList = () => {
                 <Album />
             </div >
         </div>
-        <InfoBox />
+        {/* <InfoBox /> */}
     </>
     );
 }

@@ -21,6 +21,99 @@ button {
     border-radius: 50%;
 }
 
+
+/* ClientNavbar */
+
+.clientnavbar {
+    background-color: white;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 4rem;
+    padding: 0;
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.clientnavleft {
+    width: 33.33%;
+    align-items: center;
+}
+
+.clientnavleft button {
+    background-color: var(--darkerpurple);
+    color: white;
+}
+
+.clientnavmiddle {
+    width: 33.33%;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: 'Nothing You Could Do';
+    font-weight: 600;
+
+}
+
+.clientnavright {
+    width: 33.33%;
+    display: flex;
+    flex: row;
+    justify-content: flex-end;
+
+}
+
+.clientnavright button {
+    padding: 8px;
+    text-decoration: none;
+    background-color: var(--purple);
+}
+
+.clientnavright button a {
+    padding: 0;
+    color: white;
+    font-weight: 300;
+}
+
+/* Client Login */
+.clientlogin {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.clientlogincontainer {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding: 4rem 5rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+
+}
+
+.clientloginfields {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    border: none;
+    align-items: center;
+}
+
+.clientloginfields input {
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+}
+
+.clientlogincontainer button {
+    align-self: center;
+    width: 30%;
+}
+
 /* .albumheadingsection {
     display: flex;
     justify-content: center;

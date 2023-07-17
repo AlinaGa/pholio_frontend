@@ -17,7 +17,7 @@ const Shop = () => {
 
     return (
         <>
-            {/* <Navbar /> */}
+            <ClientNavbar />
             <div>
                 <div className='galleryheadersection'>
                     <ShopBanner />
