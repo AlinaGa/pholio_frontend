@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 
 import AdminNavbar from './components/photographer/AdminNavbar';
-import SideBar from './components/photographer/Sidebar';
+// import SideBar from './components/photographer/Sidebar';
 import GalleryModal from './components/photographer/GalleryModal';
 import LoginPage from './components/photographer/LoginPage';
-import AdminMain from './components/photographer/AdminMain';
+// import AdminMain from './components/photographer/AdminMain';
 import LoginNavbar from './components/photographer/LoginNavbar';
 import LoginMain from './pages/landingpage/LoginPhotographer';
 import ClientModal from './components/photographer/ClientModal';
@@ -26,7 +26,7 @@ function App() {
 
 
     <>
-       <LandingPage />
+      <LandingPage />
 
 
       {/* <LoginClient /> */}
