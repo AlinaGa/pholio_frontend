@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto';
 }
+
 h1 {
     font-size: 5rem;
     font-family: 'Roboto';
@@ -8,35 +9,39 @@ h1 {
 
 /* navbar section */
 .NavBackground {
-      background-color: var(--darkpurple);
-   }
-   
-   .SearchBox {
-      background-color: var(--darklightpurple);
-      border-radius: 0;
+    background-color: var(--darkpurple);
+}
 
-   }
-   
-   .Admin-button {
-      background-color: var(--purple); 
-      color: black;
-      border-radius: 10px; 
-   }
+.SearchBox {
+    background-color: var(--darklightpurple);
+    border-radius: 0;
 
-   /* the top section after navbar */
+}
+
+.Admin-button {
+    background-color: var(--purple);
+    color: black;
+    border-radius: 10px;
+}
+
+.pholiologo {
+    font-family: 'Merienda';
+}
+
+/* the top section after navbar */
 .head-section {
-    padding-top: 18rem !important; 
+    padding-top: 18rem !important;
     height: 50rem;
     background-image: url('../../assets/8_tn.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
-   
+
 }
 
-  
+
 .middle-title {
-    padding-top: 10rem !important; 
+    padding-top: 10rem !important;
     height: 25rem;
     background-image: url('../../assets/banner.jpg');
     background-position: -1rem -15rem;
@@ -55,44 +60,48 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5rem 5rem ;
+    padding: 5rem 5rem;
     width: 80%;
     margin-left: 10rem;
 }
 
 
 /* middle part with the galleries */
-.shop, .albums {
+.shop,
+.albums {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: no-wrap;
 }
 
-.galleries,.client {
+.galleries,
+.client {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: no-wrap;
     align-items: center;
-} 
+}
 
 /* the testimonials */
 .whyPholio {
-    text-decoration: none!important;
+    text-decoration: none !important;
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 5rem;
- 
+
 }
+
 .responsive-sec {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 80%;
-    padding: 5rem 5rem ;
-    
+    padding: 5rem 5rem;
+
 }
+
 .responsive-par {
     display: flex;
     flex-direction: column;
@@ -100,10 +109,12 @@ h1 {
     padding-right: 5rem;
 
 }
+
 .design-ul {
     width: 80%;
     position: relative;
 }
+
 /* the beginning of the testphase */
 .test-phase {
     height: 40vh;
@@ -116,13 +127,15 @@ h1 {
     position: relative;
     color: white;
 }
+
 .testImg {
     border-radius: 50%;
     position: relative;
     height: 60vh;
 }
 
-.containerDiv,.responsive-sec {
+.containerDiv,
+.responsive-sec {
     width: 70%;
     margin-left: 12rem;
     font-family: 'Roboto';
@@ -137,8 +150,9 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
 .icons {
     display: flex;
     flex-direction: row;
@@ -146,25 +160,33 @@ h1 {
     padding: 5rem;
     font-size: 2rem;
 }
+
 .subscription {
     margin-right: 20rem;
 }
+
 @media only screen and (max-width: 600px) {
-   
-       .shop, .albums, .galleries,.client {
+
+    .shop,
+    .albums,
+    .galleries,
+    .client {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         position: relative;
-      
-    } 
-    .containerDiv,.responsive-sec {
+
+    }
+
+    .containerDiv,
+    .responsive-sec {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     .footer {
         background-color: var(--darkpurple);
         color: white;
@@ -173,9 +195,10 @@ h1 {
         justify-content: center;
         align-items: center;
         height: 100%;
-     
-        
+
+
     }
+
     .icons {
         display: flex;
         flex-direction: row;
@@ -184,16 +207,18 @@ h1 {
         height: 100%;
         margin-left: 0;
 
-        
+
     }
+
     .subscription {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-left: 15rem;
         padding: 2px;
     }
+
     .test-phase {
         height: 40vh;
         background-image: url('../../assets/18_tn.jpg');
@@ -202,6 +227,6 @@ h1 {
         align-items: center;
         position: relative;
     }
-   
-     
-  } 
+
+
+}

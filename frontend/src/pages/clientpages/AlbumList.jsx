@@ -11,6 +11,9 @@ const AlbumList = () => {
             <section className='albumheadingsection'>
                 <h1 className='yourgalleries'>Your Galleries</h1>
             </section>
+
+            <hr className='hr' />
+            
             <div className='albums'>
 
                 <Album />

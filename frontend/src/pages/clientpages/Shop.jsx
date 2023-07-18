@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
-import "../../App.css";
-import '../../components/client/client.css';
+
 import InfoBox from '../../components/client/Infobox';
 import ShopBanner from '../../components/client/ShopBanner';
 import ShopImage from '../../components/client/ShopImage';
 import Cart from '../../components/client/Cart';
 import ToggleButton from '../../components/client/ToggleButton';
+import ClientNavbar from '../../components/client/ClientNavbar';
+import "../../App.css";
+import '../../components/client/client.css';
 
 const Shop = () => {
     const [isOpen, setIsOpen] = useState(false);

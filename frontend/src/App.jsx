@@ -12,6 +12,7 @@ import LoginNavbar from './components/photographer/LoginNavbar';
 import LoginMain from './pages/landingpage/LoginPhotographer';
 import ClientModal from './components/photographer/ClientModal';
 import LoginClient from "./pages/clientpages/LoginClient";
+import LoginPhotographer from './pages/landingpage/LoginPhotographer';
 
 import AlbumList from './pages/clientpages/AlbumList';
 import Shop from './pages/clientpages/Shop';
@@ -23,37 +24,37 @@ import './components/client/client.css';
 
 function App() {
   return (
-
-
     <>
-      <LandingPage />
-
-
-      {/* <LoginClient /> */}
-      {/* <AlbumList /> */}
-      {/* <Shop />  */}
-
 
       {/* <LoginMain />   */}
       {/* < LoginNavbar />
       <LoginPage /> */}
 
-      {/* 
-<ClientModal /> */}
+      {/* <ClientModal /> */}
       {/* < AdminMain /> */}
       {/* <AdminNavbar />  */}
       {/* <SideBar /> */}
       {/* < GalleryModal /> */}
 
 
+      <Routes>
+
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPhotographer />} />
+
+        <Route path="/clogin" element={<LoginClient />} />
+        <Route path="/albums" element={<AlbumList />} />
+        <Route path="/shop" element={<Shop />} />
 
 
-      {/* <Routes> */}
-      {/* <Route path="/" element={<Login />} /> */}
-      {/* <Route path="/:photographerId/*" element={<ClientLogin />} /> */}
-      {/* <Route path="/:photographerId/:clientId" element={<AlbumList />} /> */}
-      {/* <Route path="/:photographerId/:clientId/:galleryId" element={<SpecificGallery />} /> */}
-      {/* </Routes> */}
+
+
+
+        {/* EXAMPLE  */}
+        {/* <Route path="/:photographerId/*" element={<ClientLogin />} /> */}
+        {/* <Route path="/:photographerId/:clientId" element={<AlbumList />} /> */}
+        {/* <Route path="/:photographerId/:clientId/:galleryId" element={<SpecificGallery />} /> */}
+      </Routes>
 
 
     </>

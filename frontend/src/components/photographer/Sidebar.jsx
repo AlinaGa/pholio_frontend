@@ -3,8 +3,6 @@
 
 
 
-
-
 // const SidebarButton = ({ children }) => {
 //   return (
 //     <div className="sidebar-button-wrapper">
@@ -44,7 +42,6 @@
 //             </div>
 //           </Col>
 
-
 //           <Col className="col-9">
 //             <div className="content">
 
@@ -54,7 +51,6 @@
 //       <div className="profilebox" style={{ height: '5em', width: '20em', border: '1px solid black' }}>
 //         <div >profile box</div>
 //       </div>
-
 
 //       <div className="d-flex justify-content-between w-100">
 //       <div className="order-list">
@@ -85,7 +81,6 @@
 //     </tbody>
 //   </table>
 // </div>
-       
 
 //        <div>
 
@@ -96,24 +91,15 @@
 //       <Button variant="btn" className=' Admin-button mt-4 w-100'>Search</Button>
 
 //        </div>
-      
-
-
 
 //       </div>
-
 
 //     </Col>
 //   </Row>
 // </Container>
-
-          
-            
-            
             
 //             </div>
 //           </Col> 
-
 
 //         </Row>
 //       </Container> 

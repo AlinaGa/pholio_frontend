@@ -7,7 +7,7 @@ import "../../App.css";
 const ClientNavbar = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand="sm">
+            <Navbar collapseOnSelect expand="sm" className='sticky-top'>
                 <Navbar.Toggle aria-controls='navbarScroll' data-bs-target="#navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav className='clientnavbar'>
@@ -18,14 +18,18 @@ const ClientNavbar = () => {
                         <NavLink eventKey={1} as={Link} to="/logout">LogOut</NavLink> */}
 
                         {/* Prototype without real Linking */}
-                        <div className='clientnavleft'><button>back</button></div>
+                        <div className='clientnavleft'>
+                            {/* <button>back</button> */}
+                        </div>
                         <div className="clientnavmiddle">
                             My Photographer
                         </div>
                         <div className="clientnavright">
-                            <button><NavLink>Home</NavLink>
-                            </button>
-                            <button><NavLink>My Galleries</NavLink>
+
+                            {/* make toggle cart button a component and add it here  */}
+
+                            <button>
+                                <NavLink>My Galleries</NavLink>
                             </button>
                             <button>
                                 <NavLink>Log Out</NavLink>
