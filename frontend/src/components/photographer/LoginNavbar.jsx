@@ -22,5 +22,3 @@ const LoginNavbar = () => {
 };
 
 export default LoginNavbar;
-
-

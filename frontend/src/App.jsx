@@ -12,6 +12,7 @@ import LoginNavbar from './components/photographer/LoginNavbar';
 import LoginMain from './pages/landingpage/LoginPhotographer';
 import ClientModal from './components/photographer/ClientModal';
 import LoginClient from "./pages/clientpages/LoginClient";
+import GalleryDetail from "./pages/photographerpages/GalleryDetail";
 import LoginPhotographer from './pages/landingpage/LoginPhotographer';
 
 import AlbumList from './pages/clientpages/AlbumList';
@@ -41,6 +42,7 @@ function App() {
 
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPhotographer />} />
+        <Route path="/gallerydetail" element={<GalleryDetail />} />
 
         <Route path="/clogin" element={<LoginClient />} />
         <Route path="/albums" element={<AlbumList />} />
