@@ -1,188 +1,396 @@
-   /*AdminNavbar*/
-   .NavBackground {
-     background-color: var(--darkpurple);
-   }
+.adminpage {
+  /*whole Photographers Page Container */
+  display: flex;
+}
 
-   .SearchBox {
-     background-color: var(--darklightpurple);
-     border-radius: 0;
+.main {
+  /*everything except the Sidebar */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
 
-   }
-
-   .Admin-button {
-     background-color: var(--purple);
-     color: black;
-     border-radius: 10px;
-   }
-
-
-
-
-   /*Sidebar*/
-   .sidebar-button-wrapper {
-     color: black;
-     padding: 10px;
-     margin-bottom: 5px;
-     transition: background-color 0.3s, color 0.3s;
-   }
-
-
-   .sidebar-header {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 70px;
-     color: black;
-
-   }
-
-   .sidebar-button-text {
-     padding-top: 4em;
-     color: black;
-     text-align: center;
-
-   }
-
-   .sidebar-button {
-     height: 15px;
-     line-height: 15px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-   }
-
-   .sidebar-btn-wrapper {
-     color: black;
-     padding: '20px 5px'
-   }
-
-   .sidebar-button-wrapper:hover {
-     background-color: var(--darklightpurple);
-     color: white;
-   }
-
-   .boxColor {
-     background-color: var(--darklightpurple);
-   }
+.content {
+  /* everything except Sidebar and Topbar */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
 
 
 
+/* Topbar Photographer pages*/
+
+.topbar {
+  width: 100%;
+  height: 60px;
+}
+
+.adminnavbar {
+  height: 60px;
+}
+
+.adminnavbar {
+  background-color: var(--darkpurple);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 0;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-top {
+  padding: 0 !important;
+}
+
+.adminnavleft {
+  width: 33%;
+  align-items: center;
+}
+
+.adminnavleft button {
+  background-color: var(--darkerpurple);
+  color: white;
+}
+
+.adminnavmiddle {
+  width: 33%;
+  font-size: 1.7rem;
+  text-align: center;
+  font-family: 'Nothing You Could Do';
+  font-weight: 400;
+  color: white;
+}
+
+.adminnavright {
+  width: 33%;
+  display: flex;
+  flex: row;
+  justify-content: flex-end;
+
+}
+
+.adminnavright button {
+  padding: 8px;
+  text-decoration: none;
+  background-color: var(--purple);
+}
+
+.adminnavright button a {
+  padding: 0;
+  color: white;
+  font-weight: 300;
+}
+
+
+/*new Sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 250px;
+  position: relative;
+  /* top: -60px; */
+  background-color: #ffffff;
+  overflow-y: auto;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.sidenavlogo {
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.sidenavlogo {
+  font-family: 'Merienda';
+  display: flex;
+  height: 60px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.sidenavprofile {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.sidenavdetail {
+  padding: 10px;
+}
+
+.sidebottom {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+}
+
+.sidenavlinks {
+  margin-top: 30px;
+}
+
+.sidenavdivider {
+  margin: 0;
+}
+
+.sidenavlink :hover {
+  background-color: var(--darkpurple);
+  color: white;
+}
+
+.side-link {
+  display: flex;
+  height: 60px;
+  margin: 0;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.bottomlink1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.bottomlink2 {
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.sidebar a {
+  padding-left: 30px;
+}
+
+.sidebar a i {
+  padding-right: 20px;
+
+}
 
 
 
 
 
 
+/*GalleryModal*/
+.custom-modal .modal-content {
+  width: 150% !important;
+  height: 150% !important;
+  margin-left: -25% !important;
+  margin-right: -25% !important;
+  border-radius: 0;
+}
+
+.dropdownbox {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 0px;
+}
+
+.nameform {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 0px;
+}
+
+.modalheader {
+  background-color: var(--darkpurple);
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 0;
+}
+
+.border-square {
+  border-radius: 0;
+  border: none;
+}
+
+.modalbutton {
+  background-color: var(--purple);
+  color: black;
+  border: none;
+  border-radius: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
 
 
-   /*GalleryModal*/
-   .custom-modal .modal-content {
-     width: 150% !important;
-     height: 150% !important;
-     margin-left: -25% !important;
-     margin-right: -25% !important;
-     border-radius: 0;
-   }
+/*LoginPage.jsx*/
+.photo-section {
+  height: 100vh;
+  background-image: url(/assets/1_tn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-   .dropdownbox {
-     margin-top: 10%;
-     margin-bottom: 10%;
-     border-radius: 0px;
-   }
+.login-section {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
 
-   .nameform {
-     margin-top: 5%;
-     margin-bottom: 5%;
-     border-radius: 0px;
-   }
+.loginbox {
+  padding: 0;
+}
 
-   .modalheader {
-     background-color: var(--darkpurple);
-     padding-bottom: 0px;
-     padding-top: 0px;
-     padding-left: 5%;
-     padding-right: 5%;
-     border-radius: 0;
-   }
+.col-no-padding {
+  padding-left: 0;
+  padding-right: 0;
 
-   .border-square {
-     border-radius: 0;
-     border: none;
-     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-   }
+.test {
+  width: 60%;
+}
 
-   .modalbutton {
-     background-color: var(--purple);
-     color: black;
-     border: none;
-     border-radius: 0;
-     margin-top: 2%;
-     margin-bottom: 2%;
-   }
+
+/*login Navbar*/
+.Login-NavBackground {
+  background-color: var(--lightgrey);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.sidebar {
+  padding: 0;
+  height: 100vh;
+}
 
 
 
-   /*LoginPage.jsx*/
-   .photo-section {
-     height: 100vh;
-     background-image: url(../../assets/1_tn.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-   }
+/*order list*/
 
-   .login-section {
-     background-color: rgb(255, 255, 255);
-     height: 100vh;
-   }
+.order-card {
+  border: 1px solid black;
+  width: 20%;
+  width: 15em;
+  height: 100%;
+}
 
-   .loginbox {
-     padding: 0;
-   }
-
-   .col-no-padding {
-     padding-left: 0;
-     padding-right: 0;
-
-   }
-
-   .test {
-     width: 60%;
-   }
+.profilebox {
+  margin-top: 5%;
+}
 
 
-   /*login Navbar*/
-   .Login-NavBackground {
-     background-color: var(--lightgrey);
-     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
-   }
+.order-list {
+  width: 70%;
+  padding-top: 10%;
+}
 
 
-   .sidebar {
-     padding: 0;
-     height: 100vh;
-   }
+/*ClientList & Client */
 
+.client {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 450px;
+  text-align: center;
+  margin: 1rem 1rem;
+  position: relative;
+  border: none;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
 
+.clientimage {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-   /*order list*/
+.clientname {
+  color: var(--text);
+  font-size: 1.6rem;
+}
 
-   .order-card {
-     border: 1px solid black;
-     width: 20%;
-     width: 15em;
-     height: 100%;
-   }
+.galleryamount {}
 
-   .profilebox {
-     margin-top: 5%;
-   }
+.createicon {
+  font-size: 6rem;
+  color: var(--purple);
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+}
 
+/*Create Gallery*/
 
-   .order-list {
-     width: 70%;
-     padding-top: 10%;
-   }
+.gallery {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+  margin: 1rem 1rem;
+  position: relative;
+  border: none;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+
+.galleryimage {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.gallerycontent {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallerytitle {
+  color: var(--text);
+  font-size: 1.4rem;
+}
+
+.assignedclient {
+  background-color: var(--grey) !important;
+  font-weight: 400;
+  color: var(--text);
+  font-size: 0.95rem;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+.creategallery {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+  text-align: center;
+  margin: 1rem 1rem;
+  position: relative;
+  border: none;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+
+.imagescontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

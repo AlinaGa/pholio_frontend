@@ -8,7 +8,7 @@ import "../../App.css";
 const Album = () => {
     return (
 
-        
+
         <Card className='album'>
             <Card.Img src="..\src\assets\6_tn.jpg"></Card.Img>
             <div className="darkoverlay"></div>
@@ -28,4 +28,3 @@ const Album = () => {
 }
 
 export default Album;
-

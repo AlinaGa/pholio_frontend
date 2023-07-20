@@ -7,7 +7,7 @@ const LandingNavbar = () => {
     <div>
       <div style={{ flex: "1" }}>
         <Navbar expand="lg" className="Login-NavBackground">
-          <Navbar.Brand className="fw-bold fs-1" href="#home">
+          <Navbar.Brand className="pholiologo fw-bold fs-1" href="#home">
             Pholio
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

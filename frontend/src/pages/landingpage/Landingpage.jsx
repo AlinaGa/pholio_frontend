@@ -8,8 +8,9 @@ import shop from "../../assets/shop.jpg";
 import galleries from "../../assets/galleries.jpg";
 import albums from "../../assets/albums.jpg";
 import laptop from "../../assets/laptop.png";
-import "../../components/landingpage/landingpage.css";
 import "../../App.css";
+import "../../components/landingpage/landingpage.css";
+
 import Footer from "../../components/landingpage/footer";
 import LandingNavbar from "../../components/landingpage/landingNavbar";
 
@@ -17,11 +18,12 @@ const LandingPage = () => {
   return (
     <div>
       <LandingNavbar />
-      <header className="text-center head-section pt-5">
-        <h1 className="page-title">Wilkommen bei Pholio</h1>
+      <header className="text-center head-section ">
+        <img className="landingbanner" src="..\src\assets\banner.jpg"></img>
+        {/* <h1 className="page-title">Wilkommen bei Pholio</h1>
         <Button variant="btn" className="mx-3 Admin-button m-5">
           Jetzt loslegen
-        </Button>
+        </Button> */}
       </header>
       <div className="containerDiv">
         <div className="text-center pt-5 pb-5 body-desc ">
@@ -29,10 +31,10 @@ const LandingPage = () => {
             Deine Onlinegalerie mit wirklich fairen Preisen
           </p>
           <p className="body-par p-5">
-            Wir bieten Fotografen eine eingfach Lösung ihre Bilder an Kunden zu
+            Wir bieten Fotografen eine einfach Lösung ihre Bilder an Kunden zu
             präsentieren. Erstelle Kundengalerie in Wenigen Schritten und habe
             alle Shootings eines Kunden auf einen Blick. Dein Kunde hat noch nie
-            einfacher Bilder ausgewählt und du yahlst nur den Speicherplatz, den
+            einfacher Bilder ausgewählt und du zahlst nur den Speicherplatz, den
             du auch wirklich verbrauchst!
           </p>
         </div>
