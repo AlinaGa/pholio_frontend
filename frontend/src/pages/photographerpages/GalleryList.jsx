@@ -29,7 +29,12 @@ const ClientList = () => {
                         <Gallery />
                         <Gallery />
                         <Gallery />
-
+                        <Gallery />
+                        <Gallery />
+                        <Gallery />
+                        <Gallery />
+                        <Gallery />
+                        <Gallery />
 
                     </div>
                 </div>
