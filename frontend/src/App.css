@@ -1,7 +1,7 @@
 :root {
     --darkpurple: #51415A;
 
-    --darklightpurple: #877C8D; 
+    --darklightpurple: #877C8D;
 
     --darkerpurple: #615568;
 
@@ -17,9 +17,16 @@
     --lighttext: #3e3e3e;
 }
 
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--lightgrey);
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
+

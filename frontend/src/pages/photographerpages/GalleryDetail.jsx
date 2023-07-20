@@ -4,12 +4,17 @@ import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Card } from "react-bootstrap";
-import { Nav, Navbar, NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import "../../components/client/Client.css";
+import Topbar from "../../components/photographer/Topbar";
+import Sidebar from "../../components/photographer/Sidebar";
+import ImageCard from "../../components/photographer/ImageCard";
+
+
+// import "../../components/client/Client.css";
 import "../../App.css";
 import "./GalleryDetail.css";
+
 
 export default function GalleryDetail() {
     const {
@@ -41,57 +46,71 @@ export default function GalleryDetail() {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="sm">
-                <Navbar.Toggle
-                    aria-controls="navbarScroll"
-                    data-bs-target="#navbarScroll"
-                />
-                <Navbar.Collapse id="navbarScroll">
-                    <Nav className="clientnavbar">
-                        {/* Prototype without real Linking */}
-                        <div className="clientnavleft">
-                            <button>back</button>
-                        </div>
-                        <div className="clientnavmiddle">My Galleries</div>
-                        <div className="clientnavright">
-                            <button>
-                                <NavLink>Home</NavLink>
-                            </button>
-                            <button>
-                                <NavLink>My Albums</NavLink>
-                            </button>
-                            <button>
-                                <NavLink>Log Out</NavLink>
-                            </button>
-                        </div>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <div className='adminpage'>
+                <Sidebar />
 
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input type="file" {...register("image", { required: true })} />
-                <button type="submit">Upload</button>
-                {errors.image && <span>This filed is required!!!</span>}
-            </form>
-            <ToastContainer
-                position="bottom-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="colored"
-            />
-            <Card className="gallery">
-                <Card.Title>GalleryName</Card.Title>
-                <Card.Img src="..\src\assets\6_tn.jpg"></Card.Img>
-                {/* {uploadedImages.map((image, index) => (
+                <div className='main'>
+
+                    <div className='topbar'>
+                        <Topbar />
+                    </div>
+                    <div className='content'>
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                            <input type="file" {...register("image", { required: true })} />
+                            <button type="submit">Upload</button>
+                            {errors.image && <span>This filed is required!!!</span>}
+                        </form>
+                        <ToastContainer
+                            position="bottom-right"
+                            autoClose={5000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                            theme="colored"
+                        />
+                        <div className="imagescontainer">
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                            <ImageCard />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            {/* <Card className="gallery">
+                    <Card.Title>GalleryName</Card.Title>
+                    <Card.Img src="..\src\assets\6_tn.jpg"></Card.Img>
+                     {uploadedImages.map((image, index) => (
           <Card.Img key={index} src={image.url} />
-        ))} */}
-            </Card>
+        ))}
+                </Card> */}
+
+
+
+
         </>
     );
 }

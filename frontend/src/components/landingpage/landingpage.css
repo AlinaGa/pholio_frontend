@@ -30,15 +30,20 @@ h1 {
 
 /* the top section after navbar */
 .head-section {
-    padding-top: 18rem !important;
-    height: 50rem;
-    background-image: url('../../assets/8_tn.jpg');
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('../../assets/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
 
 }
 
+.landingbanner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 .middle-title {
     padding-top: 10rem !important;
