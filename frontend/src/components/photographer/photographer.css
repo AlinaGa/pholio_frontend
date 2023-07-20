@@ -359,7 +359,7 @@
 
 .gallerycontent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .gallerytitle {
@@ -371,6 +371,7 @@
   background-color: var(--grey) !important;
   font-weight: 400;
   color: var(--text);
+  width: 100px;
   font-size: 0.95rem;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
 }

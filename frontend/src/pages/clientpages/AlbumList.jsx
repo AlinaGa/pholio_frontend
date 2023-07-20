@@ -19,6 +19,16 @@ const AlbumList = () => {
                 <Album />
                 <Album />
                 <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                
             </div >
         </div>
         {/* <InfoBox /> */}
