@@ -19,7 +19,7 @@ const LandingPage = () => {
     <div>
       <LandingNavbar />
       <header className="text-center head-section ">
-        <img className="landingbanner" src="..\src\assets\banner.jpg"></img>
+        <img className="landingbanner" src="..\src\assets\banner1.jpg"></img>
         {/* <h1 className="page-title">Wilkommen bei Pholio</h1>
         <Button variant="btn" className="mx-3 Admin-button m-5">
           Jetzt loslegen
