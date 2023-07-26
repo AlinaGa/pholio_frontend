@@ -316,7 +316,7 @@ h1 {
 }
 
 .loginimage {
-    width: 60vw;
+    width: 55vw;
     background-image: url('../../assets/halfpage.jpg');
     height: 100%;
     background-position: right;
@@ -325,7 +325,7 @@ h1 {
 }
 
 .register-container {
-    width: 40vw;
+    width: 45vw;
     border-radius: 10px;
     background-color: var(--lightgrey);
     display: flex;
@@ -335,7 +335,7 @@ h1 {
 }
 
 .registerform {
-    min-width: 90%;
+    min-width: 85%;
     background-color: white;
     border-radius: 10px;
     margin: 10px 20px;
@@ -348,6 +348,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .form-group input {
@@ -356,6 +357,11 @@ h1 {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 10px;
+}
+
+.form-group :focus {
+    outline: none !important;
+    border-bottom: 1.5px solid #737373;
 }
 
 .form-group label {
