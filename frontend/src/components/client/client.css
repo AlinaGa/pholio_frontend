@@ -237,7 +237,7 @@ button {
 }
 
 /* ShopGallery NORMAL Layout STARTS here*/
-.shopimagescontainer {
+/* .shopimagescontainer {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -248,14 +248,14 @@ button {
 .shopimage {
     max-height: 320px;
     margin: 2px;
-}
+} */
 
 /* ShopGallery NORMAL Layout ENDS here*/
 
 
 /* ShopGallery MASONRY Layout STARTS here*/
 
-/* .shopimagescontainer {
+.shopimagescontainer {
     line-height: 0;
 
     -webkit-column-count: 5;
@@ -270,7 +270,7 @@ button {
     width: 100% !important;
     height: auto !important;
     margin: 2px;
-} */
+}
 
 /* ShopGallery MASONRY Layout ENDS here*/
 
