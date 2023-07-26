@@ -305,6 +305,57 @@ h1 {
 }
 
 /* Login Page */
+.register-layout {
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: row;
+    /* Arrange elements side by side */
+}
+
+.loginimage {
+    width: 55vw;
+    background-image: url('../../assets/catlogin.jpg');
+    height: 100%;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    width: 45vw;
+    border-radius: 10px;
+    background-color: var(--lightgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform {
+    min-width: 85%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 40px 20px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+    padding: 3rem;
+}
+
+.logintitle {
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-family: 'Merienda';
+}
+
+.description {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.tooltipbutton {
+    font-size: 1rem;
+    color: white;
+    background-color: var(--darkpurple);
+}
 
 /* Register Page */
 
@@ -315,7 +366,7 @@ h1 {
     /* Arrange elements side by side */
 }
 
-.loginimage {
+.registerimage {
     width: 55vw;
     background-image: url('../../assets/halfpage.jpg');
     height: 100%;
@@ -323,6 +374,8 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
 
 .register-container {
     width: 45vw;

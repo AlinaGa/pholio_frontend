@@ -30,7 +30,7 @@ const LandingNavbar = () => {
               {/* <NavLink>Features</NavLink> */}
 
               <button>
-                <NavLink>Sign in</NavLink>
+                <NavLink>Login</NavLink>
               </button>
               <button className='register'>
                 <NavLink>Register</NavLink>
