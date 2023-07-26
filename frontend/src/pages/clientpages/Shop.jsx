@@ -27,18 +27,43 @@ const Shop = () => {
                 </div>
                 <div className='shopimagescontainer'>
                     <ShopImage />
-                    {/* <ShopImage />
-                <ShopImage />
-                <ShopImage />
-                <ShopImage />
-                <ShopImage />
-                <ShopImage /> */}
+                     <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage /> 
+
                 </div>
-                <div className='cartsection'>
+                {/* <div className='cartsection'>
 
                     <ToggleButton toggleCart={toggleCart} />
                     <Cart isOpen={isOpen} toggleCart={toggleCart} />
-                </div>
+                </div> */}
                 {/* <InfoBox /> */}
             </div>
         </>

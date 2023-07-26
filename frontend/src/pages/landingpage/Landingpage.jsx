@@ -12,14 +12,14 @@ import "../../App.css";
 import "../../components/landingpage/landingpage.css";
 
 import Footer from "../../components/landingpage/footer";
-import LandingNavbar from "../../components/landingpage/landingNavbar";
+import LandingNavbar from "../../components/landingpage/LandingNavbar";
 
 const LandingPage = () => {
   return (
     <div>
       <LandingNavbar />
       <header className="text-center head-section ">
-        <img className="landingbanner" src="..\src\assets\banner.jpg"></img>
+        <img className="landingbanner" src="..\src\assets\banner1.jpg"></img>
         {/* <h1 className="page-title">Wilkommen bei Pholio</h1>
         <Button variant="btn" className="mx-3 Admin-button m-5">
           Jetzt loslegen
@@ -46,7 +46,7 @@ const LandingPage = () => {
         <div className="row align-items-start d-flex p-5">
           <div className="col person-icon p-3">
             <PersonCheck className="fs-1" />
-            <p>Einfache Bedienung</p>
+            <p>Easy to use</p>
             <p>
               Unser übersichtliches Design macht es nicht nur dir, sondern auch
               deinen Kunden die Bedienung so einfach wie möglich!
@@ -54,19 +54,17 @@ const LandingPage = () => {
           </div>
           <div className="col domain-icon p-3">
             <Globe2 className="fs-1" />
-            <p>Deine Domain</p>
+            <p>Manage your Clients</p>
             <p>
-              Deine Galerien laufen unter deine Domain, soodass deine Kunden von
+              Deine Galerien laufen unter deine Domain, sodass deine Kunden von
               Pholio nichs mitbekommen!
             </p>
           </div>
           <div className="col preise-icon p-3">
             <Tags className="fs-1" />
-            <p>Dynamische Preise</p>
+            <p>Multiple Galleries</p>
             <p>
-              Der Preis richtet sich immer nach deinem Verbrauch. So yahlst du
-              niemals für Speicherplatz, den du garnicht benutzt. und das wird
-              immer so bleiben!
+              Create as many galleries as you want for each of your clients! They can
             </p>
           </div>
         </div>

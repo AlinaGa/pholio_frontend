@@ -12,38 +12,62 @@ h1 {
     background-color: var(--darkpurple);
 }
 
-.SearchBox {
-    background-color: var(--darklightpurple);
-    border-radius: 0;
 
-}
-
-.Admin-button {
-    background-color: var(--purple);
-    color: black;
-    border-radius: 10px;
-}
 
 .pholiologo {
     font-family: 'Merienda';
 }
 
 /* the top section after navbar */
-.head-section {
-    width: 100vw;
-    height: 100vh;
-    /* background-image: url('../../assets/banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100% 100%; */
+.landingheader {
 
+    background-size: cover;
+
+}
+
+.lpdivider {
+    border-top: 3px solid #000000;
+    width: 32%;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .landingbanner {
     width: 100%;
-    height: auto;
+    height: 75vh;
     object-fit: cover;
+    /* position: absolute; */
 }
+
+.page-title {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 65px;
+    font-family: 'Merienda';
+}
+
+.introtext {
+    max-width: 60vw !important;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 65px;
+    font-size: 1.4rem;
+}
+
+
+.startnowbtn {
+    background-color: var(--darkpurple);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+
 
 .middle-title {
     padding-top: 10rem !important;
@@ -51,6 +75,50 @@ h1 {
     background-image: url('../../assets/banner.jpg');
     background-position: -1rem -15rem;
     color: white;
+}
+
+.sec2 {
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url('../../assets/banner5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+
+}
+
+.featurette {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    flex-wrap: wrap;
+}
+
+
+.feature {
+    display: flex;
+    max-width: 300px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    align-self: auto;
+}
+
+.feature h4 {
+    font-family: 'Merienda';
+    font-weight: 800;
+    margin-bottom: 30px;
 }
 
 .body-desc {
@@ -234,4 +302,79 @@ h1 {
     }
 
 
+}
+
+/* Login Page */
+
+/* Register Page */
+
+.register-layout {
+    height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: row;
+    /* Arrange elements side by side */
+}
+
+.loginimage {
+    width: 60vw;
+    background-image: url('../../assets/halfpage.jpg');
+    height: 100%;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.register-container {
+    width: 40vw;
+    border-radius: 10px;
+    background-color: var(--lightgrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.registerform {
+    min-width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 20px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+    padding: 3rem;
+}
+
+.form-group {
+    padding: 1rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group input {
+    font-family: 'Open Sans', sans-serif !important;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.form-group label {
+    align-content: center;
+}
+
+
+.registertitle {
+    font-size: 3rem;
+    font-family: 'Merienda';
+}
+
+.registerbutton {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.register {
+    font-size: 1.2rem;
+    color: white;
 }

@@ -9,6 +9,7 @@ import axios from "axios";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
 import ImageCard from "../../components/photographer/ImageCard";
+import UploadButton from "../../components/photographer/UploadButton";
 
 // import "../../components/client/Client.css";
 import "../../App.css";
@@ -63,11 +64,10 @@ export default function GalleryDetail() {
               pauseOnFocusLoss
               draggable
               pauseOnHover
-              theme="dark"
+              theme="colored"
             />
             <div className="imagescontainer">
-              <ImageCard />
-              <ImageCard />
+              <UploadButton />
               <ImageCard />
               <ImageCard />
               <ImageCard />

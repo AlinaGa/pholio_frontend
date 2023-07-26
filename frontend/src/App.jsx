@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 //landing pages
+import HomePage from "./pages/landingpage/Homepage";
+import RegisterPage from "./pages/landingpage/RegisterPage";
 import LandingPage from "./pages/landingpage/Landingpage";
 import LoginPage from "./components/photographer/LoginPage";
 
@@ -44,8 +46,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/h" element={<HomePage />} />
+
         <Route path="/login" element={<LoginPhotographer />} />
-        {/* <Route path="/register" element={<RegisterPhotographer />} /> */}
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/galleries" element={<GalleryList />} />
         <Route path="/clients" element={<ClientList />} />
         <Route path="/gallery" element={<GalleryDetail />} />
