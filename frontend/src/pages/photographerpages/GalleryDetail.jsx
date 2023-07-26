@@ -9,6 +9,7 @@ import axios from "axios";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
 import ImageCard from "../../components/photographer/ImageCard";
+import UploadButton from "../../components/photographer/UploadButton";
 
 
 // import "../../components/client/Client.css";
@@ -73,6 +74,7 @@ export default function GalleryDetail() {
                             theme="colored"
                         />
                         <div className="imagescontainer">
+                            <UploadButton />
                             <ImageCard />
                             <ImageCard />
                             <ImageCard />

@@ -27,12 +27,37 @@ const Shop = () => {
                 </div>
                 <div className='shopimagescontainer'>
                     <ShopImage />
-                    {/* <ShopImage />
-                <ShopImage />
-                <ShopImage />
-                <ShopImage />
-                <ShopImage />
-                <ShopImage /> */}
+                     <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage />
+                    <ShopImage /> 
+
                 </div>
                 {/* <div className='cartsection'>
 
