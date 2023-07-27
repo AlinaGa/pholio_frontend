@@ -13,6 +13,60 @@ h1 {
 }
 
 
+/* LandingNavbar */
+
+.landingnavbar {
+    background-color: white;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    /* position: absolute; */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-top {
+    padding: 0 !important;
+}
+
+.landingnavleft {
+    width: 35%;
+    align-items: center;
+}
+
+.landingnavleft button {
+    background-color: var(--darkerpurple);
+    color: white;
+}
+
+.landingnavright {
+    width: 35%;
+    display: flex;
+    flex: row;
+    justify-content: flex-end;
+
+}
+
+.landingnavright button {
+    padding: 8px;
+    text-decoration: none;
+    background-color: var(--purple);
+}
+
+.landingnavright button a {
+    padding: 0;
+    color: white;
+    font-size: 1.08rem;
+    font-weight: 400;
+}
+
+.register {
+    background-color: var(--darkpurple) !important;
+}
+
 
 .pholiologo {
     font-family: 'Merienda';
@@ -20,9 +74,8 @@ h1 {
 
 /* the top section after navbar */
 .landingheader {
-
+    position: relative;
     background-size: cover;
-
 }
 
 .lpdivider {
@@ -36,14 +89,51 @@ h1 {
     width: 100%;
     height: 75vh;
     object-fit: cover;
-    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bannercontent {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translateX(20%);
+    padding: 45px;
+    z-index: 10;
+}
+
+.pgt {
+
+    margin-bottom: 10px;
 }
 
 .page-title {
     text-align: center;
-    font-size: 5rem;
-    margin-top: 65px;
-    font-family: 'Merienda';
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: 'Lora';
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.ttext {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title-text {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 .introtext {
@@ -67,6 +157,9 @@ h1 {
     font-weight: 400;
 }
 
+.startnowbtn :hover {
+    background-color: var(--purple);
+}
 
 
 .middle-title {

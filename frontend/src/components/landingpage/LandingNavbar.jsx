@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import "../client/client.css";
+import "../landingpage/landingpage.css";
 
 import "../../App.css";
 

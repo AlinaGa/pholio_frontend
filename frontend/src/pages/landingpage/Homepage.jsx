@@ -19,10 +19,24 @@ const HomePage = () => {
         <div>
             <LandingNavbar />
             <header className="landingheader">
-                <video className="landingbanner" loop autoPlay muted><source src="..\src\assets\bannervid.mp4" type="video/mp4"></source></video>
-                <h1 className="page-title">Welcome to Pholio</h1>
-                <hr className="lpdivider" />
 
+                <video className="landingbanner" loop autoPlay muted><source src="..\src\assets\bannervid.mp4" type="video/mp4"></source></video>
+                <div className="bannercontent">
+                    <div className="pgt">
+                        <h1 className="page-title"> Create Beautiful</h1>
+                        <h1 className="page-title">  Photo Galleries </h1>
+                    </div>
+                    {/* <hr className="lpdivider" /> */}
+                    <div className="ttext">
+                        <h2 className="title-text">
+                            Unlimited Galleries for all of your
+                        </h2>
+                        <h2 className="title-text">
+                            Clients in one place
+                        </h2>
+                        <button className="startnowbtn">Start for free</button>
+                    </div>
+                </div>
             </header>
             <div className="introtext">
 
