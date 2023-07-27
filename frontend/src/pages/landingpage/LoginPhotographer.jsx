@@ -1,21 +1,20 @@
 import React from 'react';
 import { Navbar, Form, FormControl, Button, Nav } from 'react-bootstrap';
 import '../../components/photographer/photographer.css';
-import LoginNavbar from '../../components/photographer/LoginNavbar';
-import LoginPage from '../../components/photographer/LoginPage';
+import LandingNavbar from '../../components/landingpage/LandingNavbar';
+import PLogin from '../../components/photographer/PLogin';
 
 
 
-const LoginMain = () => {
+const PhotographerLoginPage = () => {
   return (
-    <div style={{ flex: '1' }}>
-
-      <LoginNavbar />
-
-      <LoginPage />
-
-    </div>
+    <>
+      <div classname="pagebody">
+        <LandingNavbar />
+        <PLogin />
+      </div>
+    </>
   );
 };
 
-export default LoginMain;
+export default PhotographerLoginPage;

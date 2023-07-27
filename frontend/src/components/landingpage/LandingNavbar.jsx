@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavLink } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import "../client/client.css";
+import "../landingpage/landingpage.css";
 
 import "../../App.css";
 
@@ -30,7 +30,7 @@ const LandingNavbar = () => {
               {/* <NavLink>Features</NavLink> */}
 
               <button>
-                <NavLink>Sign in</NavLink>
+                <NavLink>Login</NavLink>
               </button>
               <button className='register'>
                 <NavLink>Register</NavLink>

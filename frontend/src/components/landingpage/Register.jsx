@@ -25,11 +25,13 @@ const Register = () => {
 
     return (
         <div className="register-layout">
-            <div className='loginimage'>
+            <div className='registerimage'>
             </div>
             <div className='register-container'>
                 <span className='registertitle'>Create your Account</span>
                 <div className='registerform'>
+                    <p className='description'>Please fill in the fields below</p>
+
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
@@ -37,6 +39,7 @@ const Register = () => {
                                 type="text"
                                 id="name"
                                 name="name"
+                                placeholder='Your Full Name'
                                 value={formData.name}
                                 onChange={handleInputChange}
                                 required
@@ -45,10 +48,14 @@ const Register = () => {
 
                         <div className="form-group">
                             <label htmlFor="companyname">Company Name</label>
+                            <button type="button" class="tooltipbutton" data-toggle="tooltip" data-placement="top" title="Your company name will be displayed to your clients on their page. It will also be in the URL to login page for your clients (Example: pholio.com/yourcompanyname)">
+                                <i class="bi bi-info-circle-fill"></i> </button>
                             <input
                                 type="text"
                                 id="companyname"
                                 name="companyname"
+                                placeholder='Name of your Company'
+
                                 value={formData.companyname}
                                 onChange={handleInputChange}
                                 required
@@ -61,6 +68,8 @@ const Register = () => {
                                 type="email"
                                 id="email"
                                 name="email"
+                                placeholder='Email Adress'
+
                                 value={formData.email}
                                 onChange={handleInputChange}
                                 required
@@ -73,6 +82,8 @@ const Register = () => {
                                 type="password"
                                 id="password"
                                 name="password"
+                                placeholder='Choose a secure password'
+
                                 value={formData.password}
                                 onChange={handleInputChange}
                                 required
