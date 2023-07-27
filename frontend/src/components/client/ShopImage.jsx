@@ -19,6 +19,11 @@ const ShopImage = () => {
       })}
 
       <img className="shopimage" src="..\src\assets\1_tn.jpg" />
+      <img className="shopimage" src="..\src\assets\2_tn.jpg" />
+      <img className="shopimage" src="..\src\assets\3_tn.jpg" />
+      {/* <img className="shopimage" src="..\src\assets\4_tn.jpg" />
+      <img className="shopimage" src="..\src\assets\5_tn.jpg" />
+      <img className="shopimage" src="..\src\assets\6_tn.jpg" /> */}
 
       {/* <img className="shopimage selectedimg" src="..\src\assets\2_tn.jpg" /> */}
     </>

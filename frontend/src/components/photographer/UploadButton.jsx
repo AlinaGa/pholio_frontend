@@ -60,7 +60,7 @@ const UploadButton = () => {
         {errors.image && <span>This filed is required!!!</span>}
       </form> */}
       <ToastContainer
-        position="bottom-right"
+        position="top-left"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
@@ -69,7 +69,7 @@ const UploadButton = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="colored"
+        theme="light"
       />
       <div className="uploadimgs">Upload Images</div>
     </button>
