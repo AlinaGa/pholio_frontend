@@ -7,22 +7,20 @@ import "../../App.css";
 const ClientLogin = () => {
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
-
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-
-    //   axios
-    //     .post("http://localhost:8000/client", {
-    //       email,
-    //       password,
-    //     })
-    //     .then((response) => {
-    //       const token = response.data.token;
-    //       console.log("Logged in successfully!", token);
-    //     })
-    //     .catch((error) => {
-    //       console.error("Login failed:", error.response.data.error);
-    //     });
+    // axios
+    //   .post("http://localhost:8000/client", {
+    //     email,
+    //     password,
+    //   })
+    //   .then((response) => {
+    //     const token = response.data.token;
+    //     console.log("Logged in successfully!", token);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Login failed:", error.response.data.error);
+    //   });
   };
 
   return (

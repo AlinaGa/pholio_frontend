@@ -1,37 +1,45 @@
 import React, { useState } from "react";
+import axiosCLient from "../../axiosClient";
+import { useNavigate } from "react-router-dom";
 // import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
 
 const PLogin = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: '',
-    companyname: '',
-    email: '',
-    password: ''
+    email: "",
+    password: "",
   });
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform your form submission or validation logic here
+    axiosCLient
+      .post("/photographer/login", formData)
+      .then((response) => {
+        console.log(response.data);
+        navigate("/galleries");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
     console.log(formData);
   };
+
   return (
     <div className="register-layout">
-      <div className='loginimage'>
-      </div>
-      <div className='login-container'>
-        <span className='logintitle'>Good to see you again!</span>
-        <div className='loginform'>
+      <div className="loginimage"></div>
+      <div className="login-container">
+        <span className="logintitle">Good to see you again!</span>
+        <div className="loginform">
           <form onSubmit={handleSubmit}>
-
             <div className="form-group">
               <label htmlFor="email">Email</label>
               <input
@@ -56,8 +64,10 @@ const PLogin = () => {
               />
             </div>
 
-            <div className='registerbutton'>
-              <button className="register" type="submit">Login</button>
+            <div className="registerbutton">
+              <button className="register" type="submit">
+                Login
+              </button>
             </div>
           </form>
         </div>
@@ -67,6 +77,3 @@ const PLogin = () => {
 };
 
 export default PLogin;
-
-
-
