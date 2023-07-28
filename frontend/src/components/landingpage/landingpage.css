@@ -33,7 +33,7 @@ h1 {
 }
 
 .landingnavleft {
-    width: 35%;
+    width: 33%;
     align-items: center;
 }
 
@@ -43,11 +43,10 @@ h1 {
 }
 
 .landingnavright {
-    width: 35%;
+    width: 33%;
     display: flex;
     flex: row;
     justify-content: flex-end;
-
 }
 
 .landingnavright button {
