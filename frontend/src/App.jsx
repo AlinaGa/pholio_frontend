@@ -9,7 +9,6 @@ import HomePage from "./pages/landingpage/Homepage";
 import PhotographerLoginPage from "./pages/landingpage/LoginPhotographer";
 import RegisterPage from "./pages/landingpage/RegisterPage";
 
-
 //Photographer pages
 import GalleryDetail from "./pages/photographerpages/GalleryDetail";
 import GalleryList from "./pages/photographerpages/GalleryList";
@@ -32,8 +31,6 @@ function App() {
     //add <div classname="pagebody"> </div> to every PHOTOGRAPHER PAGE component to wrap around the content in the pages body. This will apply the background color to the page.
 
     <div className="App">
-
-
       {/* <ClientModal /> */}
       {/* < AdminMain /> */}
       {/* <AdminNavbar />  */}
@@ -47,7 +44,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/galleries" element={<GalleryList />} />
         <Route path="/clients" element={<ClientList />} />
-        <Route path="/gallery" element={<GalleryDetail />} />
+        <Route path="/gallery/:id" element={<GalleryDetail />} />
         <Route path="/clogin" element={<LoginClient />} />
         <Route path="/albums" element={<AlbumList />} />
         <Route path="/shop" element={<Shop />} />

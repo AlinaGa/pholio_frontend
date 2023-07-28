@@ -2,17 +2,32 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axiosCLient from "../../axiosClient";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
 import ImageCard from "../../components/photographer/ImageCard";
 import UploadButton from "../../components/photographer/UploadButton";
+import { useParams } from "react-router-dom";
 
 // import "../../components/client/Client.css";
 import "../../App.css";
 import "./GalleryDetail.css";
 
 export default function GalleryDetail() {
+  const { id } = useParams();
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    axiosCLient
+      .get(`/image?gallery=${id}`)
+      .then((response) => {
+        console.log(response.data);
+        setImages(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <>
       <div className="adminpage">
@@ -24,20 +39,10 @@ export default function GalleryDetail() {
           </div>
           <div className="content">
             <div className="imagescontainer">
-              <UploadButton />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
-              <ImageCard />
+              <UploadButton gallery={id} setImages={setImages} />
+              {images.map((image) => {
+                return <ImageCard image={image} />;
+              })}
             </div>
           </div>
         </div>

@@ -3,11 +3,11 @@ import { ToastContainer, toast } from "react-toastify";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
 import "../photographer/photographer.css";
 import "../../App.css";
+import axiosCLient from "../../axiosClient";
 
-const UploadButton = () => {
+const UploadButton = ({ gallery, setImages }) => {
   const {
     register,
     handleSubmit,
@@ -18,12 +18,16 @@ const UploadButton = () => {
     e.preventDefault();
     const formData = new FormData();
     formData.append("image", data.image[0]);
+    formData.append("gallery", gallery);
 
-    axios
+    axiosCLient
       .post("http://localhost:8000/image", formData)
       .then((res) => {
-        toast.success("Image uploaded successfully");
         console.log(res.data);
+        toast.success("Image uploaded successfully");
+        setImages((images) => {
+          return [...images, res.data];
+        });
       })
       .catch((err) => {
         toast.error("Image upload failed");

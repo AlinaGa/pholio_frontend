@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axiosCLient from "../../axiosClient";
 import "./landingpage.css";
 
 const Register = () => {
@@ -19,7 +20,14 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform your form submission or validation logic here
+    axiosCLient
+      .post("/photographer/signup", formData)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
     console.log(formData);
   };
 

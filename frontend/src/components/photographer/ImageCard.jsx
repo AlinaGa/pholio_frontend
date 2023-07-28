@@ -1,25 +1,11 @@
 // import React, { useState } from "react";
 import React, { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
-import axios from "axios";
 
 import "../../pages/photographerpages/GalleryDetail.css";
 import "../../App.css";
 
-const ImageCard = () => {
-  //   const [images, setImages] = useState();
-  //   useEffect(() => {
-  //     axios
-  //       .get("http://localhost:8000/image")
-  //       .then((response) => {
-  //         console.log(response.data);
-  //         setImages(response.data);
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //       });
-  //   }, []);
-
+const ImageCard = ({ image }) => {
   return (
     <div className="uploadedimagecontainer">
       <button className="downloadimage">
@@ -28,11 +14,8 @@ const ImageCard = () => {
       <button className="deleteimage">
         <i className="bi bi-trash3"></i>
       </button>
-      {/* {images.map((image) => {
-        <div className="imagecardbody"></div>;
-      })} */}
-      <img className="uploadedimage" src="..\src\assets\6_tn.jpg" />
-      <div className="imagecardbody"></div>
+      <img className="uploadedimage" src={image.url} />
+      <div className="imagecardbody"> {image.name.split("-image-")[1]} </div>
     </div>
   );
 };

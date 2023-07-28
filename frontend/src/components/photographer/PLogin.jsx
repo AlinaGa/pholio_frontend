@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import axiosCLient from "../../axiosClient";
+import { useNavigate } from "react-router-dom";
 // import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
 
 const PLogin = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "",
-    companyname: "",
     email: "",
     password: "",
   });
@@ -20,9 +21,18 @@ const PLogin = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform your form submission or validation logic here
+    axiosCLient
+      .post("/photographer/login", formData)
+      .then((response) => {
+        console.log(response.data);
+        navigate("/galleries");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
     console.log(formData);
   };
+
   return (
     <div className="register-layout">
       <div className="loginimage"></div>
