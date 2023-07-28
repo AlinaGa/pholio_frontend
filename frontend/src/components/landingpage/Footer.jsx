@@ -22,7 +22,9 @@ const Footer = () => {
           <Telephone className="tel m-3" />
         </div>
         <div className="subscription">
-HELLO
+          <p className="pholiologofooter">Pholio</p>
+
+          <p>© by Pholio 2023</p>
         </div>
       </footer>
     </div>
