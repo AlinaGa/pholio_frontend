@@ -25,6 +25,7 @@ import "../src/components/landingpage/Landingpage.css";
 import "./components/client/client.css";
 import "./components/photographer/photographer.css";
 import axios from "axios";
+import LandingPage from "./pages/landingpage/Landingpage";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/lp" element={<LandingPage />} />
 
         <Route path="/login" element={<PhotographerLoginPage />} />
         <Route path="/register" element={<RegisterPage />} />

@@ -33,7 +33,7 @@ h1 {
 }
 
 .landingnavleft {
-    width: 35%;
+    width: 33%;
     align-items: center;
 }
 
@@ -43,11 +43,10 @@ h1 {
 }
 
 .landingnavright {
-    width: 35%;
+    width: 33%;
     display: flex;
     flex: row;
     justify-content: flex-end;
-
 }
 
 .landingnavright button {
@@ -103,9 +102,9 @@ h1 {
     border-radius: 10px;
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 15%;
     transform: translateX(20%);
-    padding: 45px;
+    padding: 45px 45px 35px 45px;
     z-index: 10;
 }
 
@@ -136,17 +135,44 @@ h1 {
     font-weight: 400;
 }
 
-.introtext {
+.intro {
     max-width: 60vw !important;
     display: flex;
     flex-direction: column;
     margin: auto;
     text-align: center;
     align-items: center;
-    margin-top: 65px;
+    margin-top: 55px;
     font-size: 1.4rem;
 }
 
+
+.sec1title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: 'Lora';
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+
+.introtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+.introtext img {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.introtext p {
+    padding: 2rem;
+    margin: 40px;
+}
 
 .startnowbtn {
     background-color: var(--darkpurple);
@@ -155,6 +181,7 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 400;
+    margin: 35px 0 0 0;
 }
 
 .startnowbtn :hover {
@@ -174,7 +201,7 @@ h1 {
     text-align: center;
     width: 100%;
     overflow-x: hidden;
-    background-image: url('../../assets/banner5.jpg');
+    background-image: url('../../assets/banner1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -196,15 +223,16 @@ h1 {
 
 .feature {
     display: flex;
-    max-width: 300px;
+    max-width: 350px;
     background-color: white;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 2;
+    padding: 30px 35px 40px 35px;
     align-self: auto;
 }
 
@@ -218,6 +246,8 @@ h1 {
     height: 50vh;
     position: relative;
 }
+
+
 
 /* featutes/dashboard */
 .dashboard {
@@ -309,26 +339,35 @@ h1 {
 
 /* the footer secion */
 .footer {
-    background-color: var(--darkpurple);
+    background-color: var(--purplepop);
     color: white;
-    height: 30vh;
+    height: 18vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-
 }
 
 .icons {
     display: flex;
     flex-direction: row;
-    margin-left: 20rem;
-    padding: 5rem;
     font-size: 2rem;
 }
 
+.pholiologofooter {
+    font-size: 2.5rem;
+    font-family: 'Merienda';
+    margin-right: 20px;
+}
+
 .subscription {
-    margin-right: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.subscription p {
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {

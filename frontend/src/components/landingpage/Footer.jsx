@@ -22,13 +22,9 @@ const Footer = () => {
           <Telephone className="tel m-3" />
         </div>
         <div className="subscription">
-          <p>Subscribe to our Newsletter:</p>
-          <form>
-            <input type="email" id="email" name="email" placeholder="Email" />
-            <Button variant="btn" className="mx-3 Admin-button m-5">
-              Subscribe
-            </Button>
-          </form>
+          <p className="pholiologofooter">Pholio</p>
+
+          <p>© by Pholio 2023</p>
         </div>
       </footer>
     </div>

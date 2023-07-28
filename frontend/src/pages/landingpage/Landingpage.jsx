@@ -191,6 +191,8 @@ const LandingPage = () => {
 
         <img src={laptop} alt="laptop and phone image" width="300" />
       </div>
+
+      
       <div className="test-phase">
         <p className="test p-5 fs-2 fw-bold ">30-Tägige Testphase</p>
         <Button variant="btn" className="mx-3 Admin-button mb-5">

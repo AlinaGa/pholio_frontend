@@ -20,7 +20,10 @@ const HomePage = () => {
             <LandingNavbar />
             <header className="landingheader">
 
-                <video className="landingbanner" loop autoPlay muted><source src="..\src\assets\bannervid.mp4" type="video/mp4"></source></video>
+                <video className="landingbanner" loop autoPlay muted>
+                    <source src="..\src\assets\bannervid.mp4" type="video/mp4"></source>
+                </video>
+
                 <div className="bannercontent">
                     <div className="pgt">
                         <h1 className="page-title"> Create Beautiful</h1>
@@ -38,11 +41,19 @@ const HomePage = () => {
                     </div>
                 </div>
             </header>
-            <div className="introtext">
 
-                <p>
-                    We offer photographers a simple solution to showcase their images to clients. Create unlimited galleries in just a few easy steps and let your clients see all their photoshoots at a glance. Your clients have never had an easier time viewing their pictures. Increase your image sales and strenghten your customer retention with our nice and clean design that perfectly stages your pictures!
-                </p>
+
+
+
+
+            <div className="intro">
+                <h2 className="sec1title">  Everything you need in one place </h2>
+                <div className="introtext">
+                    <p>
+                        We offer photographers a simple solution to showcase their images to clients. Create unlimited galleries in just a few easy steps and let your clients see all their photoshoots at a glance. Your clients have never had an easier time viewing their pictures. Increase your image sales and strenghten your customer retention with our nice and clean design that perfectly stages your pictures!
+                    </p>
+                    <img src={shop} alt="shop dashboard" width="500" />
+                </div>
                 <Button variant="btn" className="startnowbtn mx-3 mt-4">
                     Create Your Free Account
                 </Button>
@@ -84,15 +95,12 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="test-phase">
-                <p className="test p-5 fs-2 fw-bold ">30-Tägige Testphase</p>
-                <Button variant="btn" className="mx-3 Admin-button mb-5">
-                    Create Account
-                </Button>
-            </div>
+
             <Footer />
         </div >
     );
 };
 
 export default HomePage;
+
+
