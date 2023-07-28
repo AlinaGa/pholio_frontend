@@ -239,7 +239,7 @@ button {
 }
 
 /* ShopGallery NORMAL Layout STARTS here*/
-/*.shopimagescontainer {
+/* .shopimagescontainer {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -249,6 +249,7 @@ button {
 
 .shopimage {
     max-height: 320px;
+    width: auto;
     margin: 2px;
 } */
 
