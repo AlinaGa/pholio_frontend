@@ -23,17 +23,17 @@ const Sidebar = () => {
                 <hr className="sidenavdivider" />
 
                 <div className="sidenavlink">
-                    <a className="side-link list-group-item list-group-item-action">
+                    <a className="side-link">
                         <i className="bi bi-heart-fill"></i>
-                        <span>Galleries</span>
+                        <Link to="/galleries">Galleries</Link>
                     </a>
                 </div>
                 <hr className="sidenavdivider" />
                 <div className="sidenavlink">
 
                     <a className="side-link list-group-item list-group-item-action">
-                        <i className="bi bi-heart-fill"></i>
-                        <span>Clients</span>
+                        <i className="bi bi-person-lines-fill"></i>
+                        <Link to="/clients">Clients</Link>
                     </a>
                 </div>
                 <hr className="sidenavdivider" />

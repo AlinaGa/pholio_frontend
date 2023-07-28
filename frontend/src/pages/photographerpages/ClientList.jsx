@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Client from "../../components/photographer/Client";
 import CreateClient from "../../components/photographer/CreateClient";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
 import InfoBox from "../../components/client/Infobox";
+import ClientModal from "../../components/photographer/ClientModal";
 
 import "../../components/photographer/photographer.css";
 
 const ClientList = () => {
+
+  const [isClientModalOpen, setIsClientModalOpen] = useState(false);
+
+  const toggleClientModal = () => {
+    setIsClientModalOpen((prevState) => !prevState);
+  };
+
   return (
     <>
       <div className="adminpage">
@@ -18,7 +26,7 @@ const ClientList = () => {
             <Topbar />
           </div>
           <div className="content">
-            <CreateClient />
+            <CreateClient onClickCreate={toggleClientModal} />
             <Client />
             <Client />
             <Client />
@@ -32,6 +40,7 @@ const ClientList = () => {
           </div>
         </div>
       </div>
+      {isClientModalOpen && <ClientModal onClose={toggleClientModal} />}
     </>
   );
 };

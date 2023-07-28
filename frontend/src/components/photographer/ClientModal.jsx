@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { Modal, Row, Col, Form, Button } from 'react-bootstrap';
 import './photographer.css';
 
-const GalleryModal = () => {
+const ClientModal = () => {
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -41,4 +41,4 @@ const GalleryModal = () => {
   );
 };
 
-export default GalleryModal;
+export default ClientModal;

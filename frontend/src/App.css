@@ -32,3 +32,13 @@
     font-family: 'Roboto', sans-serif;
 
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
