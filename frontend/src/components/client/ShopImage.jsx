@@ -15,12 +15,12 @@ const ShopImage = () => {
   return (
     <>
       {images.map((res) => {
-        return <img src={res.url} height="200" />;
+        return <img className="shopimage" src={res.url} />;
       })}
 
-      <img className="shopimage" src="..\src\assets\1_tn.jpg" />
-      <img className="shopimage" src="..\src\assets\2_tn.jpg" />
-      <img className="shopimage" src="..\src\assets\3_tn.jpg" />
+      {/* <img className="shopimage" src="..\src\assets\1_tn.jpg" /> */}
+      {/* <img className="shopimage" src="..\src\assets\2_tn.jpg" />
+      <img className="shopimage" src="..\src\assets\3_tn.jpg" /> */}
       {/* <img className="shopimage" src="..\src\assets\4_tn.jpg" />
       <img className="shopimage" src="..\src\assets\5_tn.jpg" />
       <img className="shopimage" src="..\src\assets\6_tn.jpg" /> */}

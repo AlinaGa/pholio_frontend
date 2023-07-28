@@ -27,7 +27,7 @@ const ClientNavbar = () => {
               {/* make toggle cart button a component and add it here  */}
 
               <button>
-                <NavLink to="/galleries">My Galleries</NavLink>
+                <NavLink to="/albums">My Galleries</NavLink>
               </button>
               <button>
                 <NavLink to="/clogin">Log Out</NavLink>

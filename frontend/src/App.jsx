@@ -6,14 +6,12 @@ import { Route, Routes } from "react-router-dom";
 
 //landing pages
 import HomePage from "./pages/landingpage/Homepage";
+import PhotographerLoginPage from "./pages/landingpage/LoginPhotographer";
 import RegisterPage from "./pages/landingpage/RegisterPage";
-import LandingPage from "./pages/landingpage/Landingpage";
-import LoginPage from "./components/photographer/LoginPage";
+
 
 //Photographer pages
-import LoginMain from "./pages/landingpage/LoginPhotographer";
 import GalleryDetail from "./pages/photographerpages/GalleryDetail";
-import LoginPhotographer from "./pages/landingpage/LoginPhotographer";
 import GalleryList from "./pages/photographerpages/GalleryList";
 import ClientList from "./pages/photographerpages/ClientList";
 
@@ -34,9 +32,7 @@ function App() {
     //add <div classname="pagebody"> </div> to every PHOTOGRAPHER PAGE component to wrap around the content in the pages body. This will apply the background color to the page.
 
     <div className="App">
-      {/* <LoginMain />   */}
-      {/* < LoginNavbar />
-      <LoginPage /> */}
+
 
       {/* <ClientModal /> */}
       {/* < AdminMain /> */}
@@ -45,10 +41,9 @@ function App() {
       {/* < GalleryModal /> */}
 
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/h" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
 
-        <Route path="/login" element={<LoginPhotographer />} />
+        <Route path="/login" element={<PhotographerLoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/galleries" element={<GalleryList />} />
         <Route path="/clients" element={<ClientList />} />

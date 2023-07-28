@@ -33,7 +33,7 @@ const UploadButton = () => {
   };
   return (
     <button className="uploadimages">
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onChange={handleSubmit(onSubmit)}>
         <label htmlFor="fileInput">
           <input
             type="file"
@@ -47,7 +47,7 @@ const UploadButton = () => {
             <i className="icon-upload" />
           </div>
         </label>
-        <button type="submit">Upload</button>
+        {/* <button type="submit">Upload</button> */}
         {errors.image && <span>This field is required!!!</span>}
       </form>
 

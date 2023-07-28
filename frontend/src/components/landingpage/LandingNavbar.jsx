@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
-import "../client/client.css";
+import "../landingpage/landingpage.css";
 
 import "../../App.css";
 
@@ -32,7 +32,7 @@ const LandingNavbar = () => {
               {/* <NavLink>Features</NavLink> */}
 
               <button>
-                <NavLink to="/login">Sign in</NavLink>
+                <NavLink to="/login">Login</NavLink>
               </button>
 
               <button className="register">

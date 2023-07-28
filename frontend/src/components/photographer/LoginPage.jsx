@@ -1,26 +1,8 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import axios from "axios";
 import "./photographer.css";
 
 const LoginPage = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    axios
-      .post("http://localhost:8000/photographer/login", data)
-      .then((response) => {
-        console.log(response.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
   return (
     <Container fluid className="loginbox">
       <div className="loginbox">
@@ -31,15 +13,11 @@ const LoginPage = () => {
 
           <div className="col-md-6 col-no-padding">
             <div className="login-section d-flex align-items-center justify-content-center">
-              <Form
-                className="login-form test"
-                onSubmit={handleSubmit(onSubmit)}
-              >
+              <Form className="login-form test">
                 <Form.Group controlId="formID">
                   <Form.Control
                     type="text"
                     placeholder="Enter your ID"
-                    {...register("email", { required: true })}
                     className="border-square"
                   />
                 </Form.Group>
@@ -47,7 +25,6 @@ const LoginPage = () => {
                   <Form.Control
                     type="password"
                     placeholder="Enter your password"
-                    {...register("password", { required: true })}
                     className="border-square"
                   />
                 </Form.Group>

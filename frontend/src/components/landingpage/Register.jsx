@@ -25,7 +25,7 @@ const Register = () => {
 
   return (
     <div className="register-layout">
-      <div className="loginimage"></div>
+      <div className="registerimage"></div>
       <div className="register-container">
         <span className="registertitle">Create your Account</span>
         <div className="registerform">
