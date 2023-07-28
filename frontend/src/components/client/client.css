@@ -266,13 +266,14 @@ button {
     -moz-column-count: 5;
     -moz-column-gap: 0px;
     column-count: 5;
-    column-gap: 4px;
+    column-gap: 20px;
+
 }
 
 .shopimage {
     width: 100% !important;
     height: auto !important;
-    margin: 2px;
+    margin: 10px;
 }
 
 /* ShopGallery MASONRY Layout ENDS here*/

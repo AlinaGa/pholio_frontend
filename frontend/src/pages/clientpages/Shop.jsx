@@ -35,27 +35,6 @@ const Shop = () => {
                     <ShopImage />
                     <ShopImage />
                     <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
-                    <ShopImage />
                     <ShopImage />  */}
 
                 </div>
