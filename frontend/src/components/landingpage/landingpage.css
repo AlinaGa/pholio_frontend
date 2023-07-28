@@ -104,7 +104,7 @@ h1 {
     top: 20%;
     left: 15%;
     transform: translateX(20%);
-    padding: 45px;
+    padding: 45px 45px 35px 45px;
     z-index: 10;
 }
 
@@ -181,6 +181,7 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: 400;
+    margin: 35px 0 0 0;
 }
 
 .startnowbtn :hover {
