@@ -5,14 +5,16 @@ import "../../components/landingpage/landingpage.css";
 import "../../components/photographer/photographer.css";
 
 const RegisterPage = () => {
-  return (
-    <>
-      <div className="pagebody">
-        <LandingNavbar />
-        <Register />
-      </div>
-    </>
-  );
-};
+
+    return (
+        <>
+            <div className="pagebody">
+                <LandingNavbar />
+                <Register />
+            </div>
+        </>
+    );
+}
+
 
 export default RegisterPage;

@@ -13,9 +13,9 @@ const GalleryModal = () => {
   }, []);
 
   return (
-<Modal show={true} className="custom-modal">
+    <Modal show={true} className="custom-modal">
 
-      <Modal.Header closeButton  className='modalheader' >
+      <Modal.Header closeButton className='modalheader' >
         <Modal.Title>Title</Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -23,7 +23,7 @@ const GalleryModal = () => {
 
 
 
-      
+
         <Row className='modalframe'>
 
           <Col md={8} className='nameform'>
@@ -38,12 +38,12 @@ const GalleryModal = () => {
 
 
           <Col md={4} className='nameform'>
-  <Form >
-    <Form.Group controlId="formDate " >
-      <Form.Control className='border-square mt-5' type="date" />
-    </Form.Group>
-  </Form>
-</Col>
+            <Form >
+              <Form.Group controlId="formDate " >
+                <Form.Control className='border-square mt-5' type="date" />
+              </Form.Group>
+            </Form>
+          </Col>
 
 
 
@@ -72,14 +72,14 @@ const GalleryModal = () => {
                     whiteSpace: 'nowrap',
                     maxWidth: '100%',
                   }}
-                  
+
                 >
                   Customers
                 </span>
               </Dropdown.Toggle >
 
 
-              <Dropdown.Menu style={{ minWidth: '100%' }}  className='togglebox border-square'>
+              <Dropdown.Menu style={{ minWidth: '100%' }} className='togglebox border-square'>
                 <Dropdown.Item>Customer 1</Dropdown.Item>
                 <Dropdown.Item>Customer 2</Dropdown.Item>
                 <Dropdown.Item>Customer 3</Dropdown.Item>
