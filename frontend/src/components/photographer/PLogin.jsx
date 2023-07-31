@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axiosCLient from "../../axiosClient";
+import axiosClient from "../../axiosClient";
 import { useNavigate } from "react-router-dom";
 // import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
@@ -21,7 +21,7 @@ const PLogin = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axiosCLient
+    axiosClient
       .post("/photographer/login", formData)
       .then((response) => {
         console.log(response.data);

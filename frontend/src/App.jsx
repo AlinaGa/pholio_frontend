@@ -1,9 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
-import { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
-
+import { NavLink, Route, Routes } from "react-router-dom";
 //landing pages
 import HomePage from "./pages/landingpage/Homepage";
 import PhotographerLoginPage from "./pages/landingpage/LoginPhotographer";
@@ -24,7 +21,6 @@ import "./App.css";
 import "../src/components/landingpage/Landingpage.css";
 import "./components/client/client.css";
 import "./components/photographer/photographer.css";
-import axios from "axios";
 import LandingPage from "./pages/landingpage/Landingpage";
 
 function App() {
@@ -40,7 +36,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/lp" element={<LandingPage />} />
+        {/* <Route path="/lp" element={<LandingPage />} /> */}
 
         <Route path="/login" element={<PhotographerLoginPage />} />
         <Route path="/register" element={<RegisterPage />} />

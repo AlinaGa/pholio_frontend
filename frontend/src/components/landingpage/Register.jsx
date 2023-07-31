@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import axiosCLient from "../../axiosClient";
+import axiosClient from "../../axiosClient";
+import { useNavigate } from "react-router-dom";
 import "./landingpage.css";
 
 const Register = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     companyname: "",
@@ -20,10 +22,11 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axiosCLient
+    axiosClient
       .post("/photographer/signup", formData)
       .then((response) => {
         console.log(response.data);
+        navigate("/clients");
       })
       .catch((err) => {
         console.log(err);

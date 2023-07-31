@@ -13,7 +13,7 @@ const AlbumList = () => {
             </section>
 
             <hr className='hr' />
-            
+
             <div className='albums'>
 
                 <Album />
@@ -28,7 +28,7 @@ const AlbumList = () => {
                 <Album />
                 <Album />
                 <Album />
-                
+
             </div >
         </div>
         {/* <InfoBox /> */}
