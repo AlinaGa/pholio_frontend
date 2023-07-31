@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Modal, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
 
-const ClientModal = () => {
+const ClientModal = ({ onClose }) => {
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -13,21 +13,27 @@ const ClientModal = () => {
   }, []);
 
   return (
-
-    <Modal show={true} className='creationmodal'>
-      <Modal.Header closeButton className='modalheader'>
-        <Modal.Title className='modaltitle'>New Client</Modal.Title>
+    <Modal show={true} className="creationmodal">
+      <Modal.Header closeButton className="modalheader" onClick={onClose}>
+        <Modal.Title className="modaltitle">New Client</Modal.Title>
       </Modal.Header>
-      <Modal.Body className='modalbody'>
-        <Row className='modalframe'>
-          <Col md={12} className='d-flex justify-content-center'>
-            <Form className='w-75'>
+      <Modal.Body className="modalbody">
+        <Row className="modalframe">
+          <Col md={12} className="d-flex justify-content-center">
+            <Form className="w-75">
               <Form.Group controlId="formGalleryID">
-                <Form.Control type="text" placeholder="Client Name" className='border-square my-5' />
+                <Form.Control
+                  type="text"
+                  placeholder="Client Name"
+                  className="border-square my-5"
+                />
               </Form.Group>
               <Form.Group controlId="formGalleryID">
-                <Form.Control type="text" placeholder="E-Mail" className='border-square my-5' />
-
+                <Form.Control
+                  type="text"
+                  placeholder="E-Mail"
+                  className="border-square my-5"
+                />
               </Form.Group>
               <Form.Group controlId="formPassword">
                 <Form.Control

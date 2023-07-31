@@ -22,8 +22,7 @@ const PLogin = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axiosClient
-      // .post("/photographer/login", formData)
-      .post("http://localhost:8000/photographer/login", formData)
+      .post("/photographer/login", formData)
       .then((response) => {
         console.log(response.data);
         navigate("/galleries");
