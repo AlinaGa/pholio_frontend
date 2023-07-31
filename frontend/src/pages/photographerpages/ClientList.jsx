@@ -9,7 +9,6 @@ import ClientModal from "../../components/photographer/ClientModal";
 import "../../components/photographer/photographer.css";
 
 const ClientList = () => {
-
   const [isClientModalOpen, setIsClientModalOpen] = useState(false);
 
   const toggleClientModal = () => {
@@ -27,13 +26,6 @@ const ClientList = () => {
           </div>
           <div className="content">
             <CreateClient onClickCreate={toggleClientModal} />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
             <Client />
             <Client />
             <Client />

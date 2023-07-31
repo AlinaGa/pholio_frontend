@@ -3,6 +3,8 @@ import axiosClient from "../../axiosClient";
 import { useNavigate } from "react-router-dom";
 // import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 
 const PLogin = () => {
   const navigate = useNavigate();
@@ -10,6 +12,8 @@ const PLogin = () => {
     email: "",
     password: "",
   });
+
+  const { login } = useContext(AuthContext);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -21,16 +25,18 @@ const PLogin = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axiosClient
-      .post("/photographer/login", formData)
-      .then((response) => {
-        console.log(response.data);
-        navigate("/galleries");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    console.log(formData);
+    login(formData);
+
+    // axiosClient
+    //   .post("/photographer/login", formData)
+    //   .then((response) => {
+    //     console.log(response.data);
+    //     navigate("/galleries");
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+    // console.log(formData);
   };
 
   return (

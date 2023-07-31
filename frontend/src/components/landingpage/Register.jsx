@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axiosClient from "../../axiosClient";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 import "./landingpage.css";
 
 const Register = () => {
@@ -12,6 +14,8 @@ const Register = () => {
     password: "",
   });
 
+  const { signup } = useContext(AuthContext);
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -22,16 +26,17 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axiosClient
-      .post("/photographer/signup", formData)
-      .then((response) => {
-        console.log(response.data);
-        navigate("/clients");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    console.log(formData);
+    signup(formData);
+    // axiosClient
+    //   .post("/photographer/signup", formData)
+    //   .then((response) => {
+    //     console.log(response.data);
+    //     navigate("/clients");
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+    // console.log(formData);
   };
 
   return (

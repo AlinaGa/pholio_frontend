@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Modal, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
+import axiosClient from "../../axiosClient";
 
 const ClientModal = ({ onClose }) => {
   const dropdownRef = useRef(null);
