@@ -24,7 +24,7 @@ const Sidebar = () => {
 
                 <div className="sidenavlink">
                     <a className="side-link">
-                        <i className="bi bi-heart-fill"></i>
+                        <i className="bi bi-grid-fill"></i>
                         <Link to="/galleries">Galleries</Link>
                     </a>
                 </div>

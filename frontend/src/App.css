@@ -42,3 +42,7 @@ a {
 button {
     cursor: pointer;
 }
+
+.modaltitle {
+    color: white;
+}

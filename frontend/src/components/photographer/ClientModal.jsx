@@ -13,16 +13,19 @@ const ClientModal = () => {
   }, []);
 
   return (
-    <Modal show={true} >
+    <Modal show={true} className='creationmodal'>
       <Modal.Header closeButton className='modalheader'>
-        <Modal.Title>Title</Modal.Title>
+        <Modal.Title className='modaltitle'>New Client</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className='modalbody'>
         <Row className='modalframe'>
           <Col md={12} className='d-flex justify-content-center'>
             <Form className='w-75'>
               <Form.Group controlId="formGalleryID">
-                <Form.Control type="text" placeholder="ID" className='border-square my-5' />
+                <Form.Control type="text" placeholder="Client Name" className='border-square my-5' />
+              </Form.Group>
+              <Form.Group controlId="formGalleryID">
+                <Form.Control type="text" placeholder="E-Mail" className='border-square my-5' />
               </Form.Group>
               <Form.Group controlId="formPassword">
                 <Form.Control type="password" placeholder="Password" className='border-square my-5' />
@@ -34,9 +37,6 @@ const ClientModal = () => {
           </Col>
         </Row>
       </Modal.Body>
-      <Modal.Footer>
-        {/* Footer content */}
-      </Modal.Footer>
     </Modal>
   );
 };
