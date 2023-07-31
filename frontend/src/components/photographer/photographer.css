@@ -196,6 +196,7 @@
   margin-left: -25% !important;
   margin-right: -25% !important;
   border-radius: 0;
+  border: none;
 }
 
 .dropdownbox {
@@ -210,18 +211,38 @@
   border-radius: 0px;
 }
 
+.creationmodal {
+  border: none;
+  border-radius: 20px;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  margin-top: 20vh;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5))
+}
+
 .modalheader {
   background-color: var(--darkpurple);
   padding-bottom: 0px;
   padding-top: 0px;
   padding-left: 5%;
   padding-right: 5%;
-  border-radius: 0;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  height: 4rem;
+
+}
+
+.modalbody {
+  border: none;
+  border-radius: 10px;
 }
 
 .border-square {
   border-radius: 0;
-  border: none;
+  border-radius: 5px;
 }
 
 .modalbutton {
@@ -231,6 +252,18 @@
   border-radius: 0;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.modalbutton :hover {
+  text-decoration: none;
+  background-color: var(--darkpurple);
+  color: black;
+}
+
+.modaltitle {
+  font-family: 'Roboto';
+  font-weight: 300;
+  margin-left: 2rem;
 }
 
 
@@ -306,7 +339,7 @@
   position: relative;
   border: none;
   background-color: white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   justify-content: center;
 }
 
@@ -341,7 +374,7 @@
   position: relative;
   border: none;
   background-color: white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   justify-content: center;
 }
 
@@ -381,7 +414,7 @@
   position: relative;
   border: none;
   background-color: white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
   justify-content: center;
 }
 

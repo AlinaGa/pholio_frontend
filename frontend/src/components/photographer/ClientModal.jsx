@@ -13,27 +13,21 @@ const ClientModal = () => {
   }, []);
 
   return (
-    <Modal show={true}>
-      <Modal.Header closeButton className="modalheader">
-        <Modal.Title>New Client</Modal.Title>
+
+    <Modal show={true} className='creationmodal'>
+      <Modal.Header closeButton className='modalheader'>
+        <Modal.Title className='modaltitle'>New Client</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <Row className="modalframe">
-          <Col md={12} className="d-flex justify-content-center">
-            <Form className="w-75">
+      <Modal.Body className='modalbody'>
+        <Row className='modalframe'>
+          <Col md={12} className='d-flex justify-content-center'>
+            <Form className='w-75'>
               <Form.Group controlId="formGalleryID">
-                <Form.Control
-                  type="text"
-                  placeholder="Name"
-                  className="border-square my-5"
-                />
+                <Form.Control type="text" placeholder="Client Name" className='border-square my-5' />
               </Form.Group>
               <Form.Group controlId="formGalleryID">
-                <Form.Control
-                  type="text"
-                  placeholder="Email"
-                  className="border-square my-5"
-                />
+                <Form.Control type="text" placeholder="E-Mail" className='border-square my-5' />
+
               </Form.Group>
               <Form.Group controlId="formPassword">
                 <Form.Control
