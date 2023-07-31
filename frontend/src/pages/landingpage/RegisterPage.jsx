@@ -8,7 +8,7 @@ import '../../components/photographer/photographer.css';
 const RegisterPage = () => {
     return (
         <>
-            <div classname="pagebody">
+            <div className="pagebody">
                 <LandingNavbar />
                 <Register />
             </div>
