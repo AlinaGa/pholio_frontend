@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axiosCLient from "../../axiosClient";
+import axiosClient from "../../axiosClient";
 import { useNavigate } from "react-router-dom";
 import "./landingpage.css";
 
