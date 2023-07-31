@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axiosCLient from "../../axiosClient";
+import axiosClient from "../../axiosClient";
 import Gallery from "../../components/photographer/Gallery";
 import CreateGallery from "../../components/photographer/CreateGallery";
 import Topbar from "../../components/photographer/Topbar";
@@ -12,7 +12,7 @@ const ClientList = () => {
   const [galleries, setGalleries] = useState([]);
 
   useEffect(() => {
-    axiosCLient
+    axiosClient
       .get("/gallery")
       .then((response) => {
         console.log(response.data);

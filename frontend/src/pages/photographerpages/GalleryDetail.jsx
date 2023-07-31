@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import axiosCLient from "../../axiosClient";
+import axiosClient from "../../axiosClient";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
 import ImageCard from "../../components/photographer/ImageCard";
@@ -18,7 +18,7 @@ export default function GalleryDetail() {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    axiosCLient
+    axiosClient
       .get(`/image?gallery=${id}`)
       .then((response) => {
         console.log(response.data);
