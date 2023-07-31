@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import "../photographer/photographer.css";
 import "../../App.css";
-import axiosCLient from "../../axiosClient";
+import axiosClient from "../../axiosClient";
 
 const UploadButton = ({ gallery, setImages }) => {
   const {
@@ -20,7 +20,7 @@ const UploadButton = ({ gallery, setImages }) => {
     formData.append("image", data.image[0]);
     formData.append("gallery", gallery);
 
-    axiosCLient
+    axiosClient
       .post("http://localhost:8000/image", formData)
       .then((res) => {
         console.log(res.data);
