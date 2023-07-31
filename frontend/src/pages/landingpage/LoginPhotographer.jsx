@@ -9,7 +9,7 @@ import PLogin from '../../components/photographer/PLogin';
 const PhotographerLoginPage = () => {
   return (
     <>
-      <div classname="pagebody">
+      <div className="pagebody">
         <LandingNavbar />
         <PLogin />
       </div>
