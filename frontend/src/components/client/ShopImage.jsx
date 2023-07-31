@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import axiosClient from "../../axiosClient";
 
 import "./client.css";
 import "../../App.css";
@@ -7,9 +8,14 @@ import "../../App.css";
 const ShopImage = () => {
   const [images, setImages] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:8000/image").then((res) => {
-      setImages(res.data);
-    });
+    axiosClient
+      .get("/image")
+      .then((res) => {
+        setImages(res.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }, []);
 
   return (
