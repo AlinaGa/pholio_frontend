@@ -10,11 +10,11 @@ import "../../App.css";
 import "../../components/client/client.css";
 
 const Shop = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const toggleCart = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleCart = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   return (
     <>

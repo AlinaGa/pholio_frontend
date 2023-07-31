@@ -22,7 +22,7 @@ const Register = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axiosCLient
+    axiosClient
       .post("/photographer/signup", formData)
       .then((response) => {
         console.log(response.data);

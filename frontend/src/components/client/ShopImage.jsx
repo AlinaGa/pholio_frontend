@@ -7,7 +7,7 @@ import "../../App.css";
 const ShopImage = () => {
   const [images, setImages] = useState([]);
   useEffect(() => {
-    axios
+    axiosClient
       .get("/image")
       .then((res) => {
         setImages(res.data);
