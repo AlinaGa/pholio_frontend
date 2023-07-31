@@ -21,7 +21,8 @@ const UploadButton = ({ gallery, setImages }) => {
     formData.append("gallery", gallery);
 
     axiosClient
-      .post("http://localhost:8000/image", formData)
+      .post("/image", formData)
+
       .then((res) => {
         console.log(res.data);
         toast.success("Image uploaded successfully");
