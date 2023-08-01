@@ -23,16 +23,16 @@ const Topbar = () => {
 
             {/* Prototype without real Linking */}
             <div className="adminnavleft">{/* <button>back</button> */}</div>
-            <div className="adminnavmiddle"></div>
+            <div className="adminnavmiddle">Current Page</div>
             <div className="adminnavright">
               {/* make toggle cart button a component and add it here  */}
 
-              <button>
+              {/* <button>
                 <NavLink to="/galleries">My Galleries</NavLink>
-              </button>
-              <button>
+              </button> */}
+              {/* <button>
                 <NavLink to="/login">Log Out</NavLink>
-              </button>
+              </button> */}
             </div>
           </Nav>
         </Navbar.Collapse>

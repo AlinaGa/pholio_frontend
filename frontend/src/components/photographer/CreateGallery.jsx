@@ -5,9 +5,9 @@ import "../photographer/photographer.css";
 import "../../App.css";
 
 
-const CreateGallery = () => {
+const CreateGallery = ({ onClickCreate }) => {
     return (
-        <Card className='creategallery'>
+        <Card className='creategallery' onClick={onClickCreate}>
             <i className="createicon bi bi-patch-plus-fill"></i>
 
             <div className='clientname'>Create new Gallery</div>

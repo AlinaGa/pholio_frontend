@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Modal, Row, Col, Form, Button, Dropdown } from "react-bootstrap";
 import "./photographer.css";
 
-const GalleryModal = () => {
+const GalleryModal = ({ onClose }) => {
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -13,11 +13,11 @@ const GalleryModal = () => {
   }, []);
 
   return (
-    <Modal show={true} className="custom-modal">
-      <Modal.Header closeButton className="modalheader">
-        <Modal.Title>Title</Modal.Title>
+    <Modal show={true} className="creationmodal">
+      <Modal.Header closeButton className="modalheader" onClick={onClose}>
+        <Modal.Title className="modaltitle">Title</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="modalbody">
         <Row className="modalframe">
           <Col md={8} className="nameform">
             <Form>

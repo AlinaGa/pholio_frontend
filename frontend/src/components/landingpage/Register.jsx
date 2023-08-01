@@ -26,7 +26,7 @@ const Register = () => {
       .post("/photographer/signup", formData)
       .then((response) => {
         console.log(response.data);
-        navigate("/clients");
+        navigate("/login");
       })
       .catch((err) => {
         console.log(err);

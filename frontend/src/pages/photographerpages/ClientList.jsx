@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axiosClient from "../../axiosClient";
 import Client from "../../components/photographer/Client";
 import CreateClient from "../../components/photographer/CreateClient";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
-import InfoBox from "../../components/client/Infobox";
 import ClientModal from "../../components/photographer/ClientModal";
-
 import "../../components/photographer/photographer.css";
 
 const ClientList = () => {
+  const [clients, setClients] = useState([]);
 
   const [isClientModalOpen, setIsClientModalOpen] = useState(false);
 
   const toggleClientModal = () => {
     setIsClientModalOpen((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    axiosClient
+      .get("/client")
+      .then((response) => {
+        console.log(response.data);
+        setClients(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <>
@@ -27,16 +39,9 @@ const ClientList = () => {
           </div>
           <div className="content">
             <CreateClient onClickCreate={toggleClientModal} />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
-            <Client />
+            {clients.map((client) => {
+              return <Client client={client} key={client._id} />;
+            })}
           </div>
         </div>
       </div>

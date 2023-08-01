@@ -190,14 +190,14 @@
 
 
 /*GalleryModal*/
-.custom-modal .modal-content {
+/* .custom-modal .modal-content {
   width: 150% !important;
   height: 150% !important;
   margin-left: -25% !important;
   margin-right: -25% !important;
   border-radius: 0;
   border: none;
-}
+} */
 
 .dropdownbox {
   margin-top: 10%;
@@ -217,6 +217,7 @@
 }
 
 .modal-content {
+  width: 40vw;
   border: none;
   border-radius: 20px;
   margin-top: 20vh;

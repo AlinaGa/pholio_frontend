@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import axiosClient from "../../axiosClient";
 import { useNavigate } from "react-router-dom";
 
@@ -27,7 +27,6 @@ const ClientModal = ({ onClose }) => {
       .post("/client", formData)
       .then((response) => {
         console.log(response.data);
-        onClose();
         navigate("/clients");
       })
       .catch((err) => {
@@ -44,48 +43,42 @@ const ClientModal = ({ onClose }) => {
       <Modal.Body className="modalbody">
         <Row className="modalframe">
           <Col md={12} className="d-flex justify-content-center">
-            <form onSubmit={handleSubmit}>
+            <Form className="w-75" onSubmit={handleSubmit}>
 
-              <div className="form-group">
-                {/* <label htmlFor="email">E-Mail</label> */}
-                <input
-                  name="email"
+              <Form.Group controlId="formGalleryID">
+                <Form.Control
                   type="text"
                   placeholder="E-Mail"
+                  className="border-square my-5"
+                  value={formData.email}
                   onChange={handleInputChange}
                   required
                 />
-              </div>
-
-              <div className="form-group">
-                {/* <label htmlFor="name">Name</label> */}
-                <input
-                  name="name"
+              </Form.Group>
+              <Form.Group controlId="formGalleryID">
+                <Form.Control
                   type="text"
                   placeholder="Client Name"
-                  // className="border-square my-7"
+                  className="border-square my-5"
+                  value={formData.name}
                   onChange={handleInputChange}
                   required
                 />
-              </div>
-
-              <div className="form-group">
-                {/* <label htmlFor="password">Password</label> */}
-                <input
-                  name="password"
+              </Form.Group>
+              <Form.Group controlId="formPassword">
+                <Form.Control
                   type="password"
                   placeholder="Password"
-                  // className="border-square my-5"
+                  className="border-square my-5"
+                  value={formData.password}
                   onChange={handleInputChange}
                   required
                 />
-              </div>
-
-
+              </Form.Group>
               <div className="d-flex justify-content-end">
                 <Button className="modalbutton" type="submit">Create</Button>
               </div>
-            </form>
+            </Form>
           </Col>
         </Row>
       </Modal.Body>
