@@ -4,12 +4,18 @@ import Gallery from "../../components/photographer/Gallery";
 import CreateGallery from "../../components/photographer/CreateGallery";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
-import InfoBox from "../../components/client/Infobox";
 import ImageCard from "../../components/photographer/ImageCard";
+import GalleryModal from "../../components/photographer/GalleryModal";
 import "../../components/photographer/photographer.css";
 
-const ClientList = () => {
+const GalleryList = () => {
   const [galleries, setGalleries] = useState([]);
+  const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
+
+  const toggleGalleryModal = () => {
+    setIsGalleryModalOpen((prevState) => !prevState);
+  };
+
 
   useEffect(() => {
     axiosClient
@@ -33,15 +39,16 @@ const ClientList = () => {
             <Topbar />
           </div>
           <div className="content">
-            <CreateGallery />
+            <CreateGallery onClickCreate={toggleGalleryModal} />
             {galleries.map((gallery) => {
               return <Gallery gallery={gallery} key={gallery._id} />;
             })}
           </div>
         </div>
       </div>
+      {isGalleryModalOpen && <GalleryModal onClose={toggleGalleryModal} />}
     </>
   );
 };
 
-export default ClientList;
+export default GalleryList;

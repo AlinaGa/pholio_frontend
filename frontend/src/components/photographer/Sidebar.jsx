@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axiosClient from "../../axiosClient";
+
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./photographer.css";
 
 const Sidebar = () => {
+    const [photographerName, setPhotographerName] = useState("");
+
+
+    useEffect(() => {
+        axiosClient
+            .get("/photographer")
+            .then((response) => {
+
+                console.log(response.data);
+                const { name } = response.data;
+                setPhotographerName(name);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }, []);
+
     return (
 
 
@@ -14,7 +33,10 @@ const Sidebar = () => {
                 <span className="pholiologo">Pholio</span>
             </div>
             <div className="sidenavprofile">
-                <span className="sidenavdetail">Photographer Name</span>
+                <div className="sidenavdetail">
+                    <span>{photographerName}</span>;
+
+                </div>
                 <span className="sidenavdetail">Company Name</span>
 
             </div>
@@ -23,18 +45,18 @@ const Sidebar = () => {
                 <hr className="sidenavdivider" />
 
                 <div className="sidenavlink">
-                    <a className="side-link">
+                    <Link to="/galleries" className="side-link">
                         <i className="bi bi-grid-fill"></i>
-                        <Link to="/galleries">Galleries</Link>
-                    </a>
+                        Galleries
+                    </Link>
                 </div>
                 <hr className="sidenavdivider" />
                 <div className="sidenavlink">
 
-                    <a className="side-link list-group-item list-group-item-action">
+                    <Link to="/clients" className="side-link list-group-item list-group-item-action">
                         <i className="bi bi-person-lines-fill"></i>
-                        <Link to="/clients">Clients</Link>
-                    </a>
+                        Clients
+                    </Link>
                 </div>
                 <hr className="sidenavdivider" />
 
@@ -43,18 +65,19 @@ const Sidebar = () => {
 
                     <div className="sidenavlink">
 
-                        <a className="bottomlink1 side-link  list-group-item list-group-item-action">
+                        <Link to="/help" className="bottomlink1 side-link  list-group-item list-group-item-action">
                             <i className="bi bi-heart-fill"></i>
-                            <span>Help</span>
-                        </a>
+                            Help
+                        </Link>
                     </div>
 
                     <div className="sidenavlink">
 
-                        <a className="bottomlink2 side-link  list-group-item list-group-item-action">
+                        <Link to="/login" className="bottomlink2 side-link  list-group-item list-group-item-action">
                             <i className="bi bi-heart-fill"></i>
-                            <span>Log Out</span>
-                        </a>
+                            Log Out
+                        </Link>
+
                     </div>
 
                 </div>

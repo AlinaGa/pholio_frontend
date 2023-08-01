@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axiosClient from "../../axiosClient";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthProvider";
@@ -27,16 +26,6 @@ const Register = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     signup(formData);
-    // axiosClient
-    //   .post("/photographer/signup", formData)
-    //   .then((response) => {
-    //     console.log(response.data);
-    //     navigate("/clients");
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-    // console.log(formData);
   };
 
   return (
