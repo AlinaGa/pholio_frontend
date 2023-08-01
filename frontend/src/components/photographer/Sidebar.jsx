@@ -13,11 +13,12 @@ const Sidebar = ({ user }) => {
       </div>
       <div className="sidenavprofile">
         <div className="sidenavdetail">
-          {/* <span>{user?.name}</span> */}
-          <span>{user?.name && user.name.toUpperCase()}</span>
+          <span>{user?.name}</span>
+          {/* <span>{user?.name && user.name.toUpperCase()}</span> */}
         </div>
         <span className="sidenavdetail">
-          {user?.company && user.company.toUpperCase()}
+          {user?.company}
+          {/* {user?.company && user.company.toUpperCase()} */}
         </span>
       </div>
 
