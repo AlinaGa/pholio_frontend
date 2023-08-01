@@ -12,9 +12,7 @@ import { AuthContext } from "../../context/AuthProvider";
 const ClientList = () => {
   const { user } = useContext(AuthContext);
 
-
   const [clients, setClients] = useState([]);
-
   const [isClientModalOpen, setIsClientModalOpen] = useState(false);
 
   const toggleClientModal = () => {
@@ -23,7 +21,7 @@ const ClientList = () => {
 
   useEffect(() => {
     axiosClient
-      .get("/client")
+      .get("/photographer/clients")
       .then((response) => {
         setClients(response.data);
       })

@@ -25,7 +25,6 @@ const GalleryList = () => {
     axiosClient
       .get("/gallery")
       .then((response) => {
-        console.log(response.data);
         setGalleries(response.data);
       })
       .catch((err) => {
@@ -37,7 +36,7 @@ const GalleryList = () => {
 
   useEffect(() => {
     axiosClient
-      .get("/client")
+      .get("/photographer/clients")
       .then((response) => {
         setClients(response.data);
       })

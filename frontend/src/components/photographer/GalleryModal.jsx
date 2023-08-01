@@ -24,6 +24,7 @@ const GalleryModal = ({ onClose, clients, setGalleries }) => {
       .then((response) => {
         // console.log(response.data);
         setGalleries((prevGalleries) => [...prevGalleries, response.data]);
+        console.log(response.data);
         onClose();
       })
       .catch((err) => {
@@ -68,8 +69,8 @@ const GalleryModal = ({ onClose, clients, setGalleries }) => {
                   required
                 >
                   <option value="">Select a Client</option>
-                  {clients.map((client) => (
-                    <option key={client.id} value={client.id}>
+                  {clients?.map((client) => (
+                    <option key={client._id} value={client._id}>
                       {client.name}
                     </option>
                   ))}
