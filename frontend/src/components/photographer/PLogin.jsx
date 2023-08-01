@@ -52,7 +52,7 @@ const PLogin = () => {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
+                // value={formData.email} 
                 onChange={handleInputChange}
                 required
               />
@@ -64,7 +64,7 @@ const PLogin = () => {
                 type="password"
                 id="password"
                 name="password"
-                value={formData.password}
+                // value={formData.password}
                 onChange={handleInputChange}
                 required
               />
