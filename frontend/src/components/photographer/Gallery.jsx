@@ -5,6 +5,10 @@ import { useNavigate } from "react-router-dom";
 import "../photographer/photographer.css";
 import "../../App.css";
 
+
+//ADD CLIENT NAME
+
+
 const Gallery = ({ gallery }) => {
   const navigate = useNavigate();
   return (

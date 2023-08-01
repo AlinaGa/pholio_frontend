@@ -45,8 +45,23 @@ export default function AuthProvider({ children }) {
         console.log(err);
       });
   };
+
+
+  const clientLogin = (data) => {
+    axiosClient
+      .post("/client/login", data)
+      .then((response) => {
+        setUser(response.data);
+        setIsloading(false);
+        navigate("/albums");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   return (
-    <AuthContext.Provider value={{ user, isLoading, login, signup, logout }}>
+    <AuthContext.Provider value={{ user, isLoading, login, signup, clientLogin, logout }}>
       {children}
     </AuthContext.Provider>
   );

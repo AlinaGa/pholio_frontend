@@ -26,17 +26,6 @@ const PLogin = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     login(formData);
-
-    // axiosClient
-    //   .post("/photographer/login", formData)
-    //   .then((response) => {
-    //     console.log(response.data);
-    //     navigate("/galleries");
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-    // console.log(formData);
   };
 
   return (
@@ -52,7 +41,7 @@ const PLogin = () => {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
+                // value={formData.email}
                 onChange={handleInputChange}
                 required
               />
@@ -64,7 +53,7 @@ const PLogin = () => {
                 type="password"
                 id="password"
                 name="password"
-                value={formData.password}
+                // value={formData.password}
                 onChange={handleInputChange}
                 required
               />

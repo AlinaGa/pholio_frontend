@@ -47,12 +47,15 @@ function App() {
         <Route path="/albums" element={<AlbumList />} />
         <Route path="/shop" element={<Shop />} />
 
+        {/* <Route path="/:company/login" element={<LoginClient />
+        } /> */}
+
         {/* EXAMPLE  */}
         {/* <Route path="/:photographerId/*" element={<ClientLogin />} /> */}
         {/* <Route path="/:photographerId/:clientId" element={<AlbumList />} /> */}
         {/* <Route path="/:photographerId/:clientId/:galleryId" element={<SpecificGallery />} /> */}
       </Routes>
-    </div>
+    </div >
   );
 }
 

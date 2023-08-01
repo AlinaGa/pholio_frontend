@@ -21,7 +21,7 @@ const Client = ({ client }) => {
                         {client.email}
                     </span>
                     <span className='galleryamount'>
-                        {client.password}
+                        {/* {client.password} */}
                         {/* {client.galleries.length} Gallery{client.galleries.length !== 1 ? 's' : ''} */}
                     </span>
                 </div>
