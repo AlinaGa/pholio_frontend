@@ -1,87 +1,88 @@
-import React, { useRef, useEffect } from "react";
-import { Modal, Row, Col, Form, Button, Dropdown } from "react-bootstrap";
-import "./photographer.css";
+import React, { useState } from "react";
+import axiosClient from "../../axiosClient";
+import { Modal, Row, Col, Form, Button } from "react-bootstrap";
 
-const GalleryModal = ({ onClose }) => {
-  const dropdownRef = useRef(null);
+const GalleryModal = ({ onClose, clients, setGalleries }) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    date: "",
+    clientId: "",
+  });
 
-  useEffect(() => {
-    if (dropdownRef.current) {
-      const modalWidth = document.querySelector(".modal-content").offsetWidth;
-      dropdownRef.current.style.width = `calc(${modalWidth}px - 2rem)`;
-    }
-  }, []);
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axiosClient
+      .post("/gallery", formData)
+      .then((response) => {
+        // console.log(response.data);
+        setGalleries((prevGalleries) => [...prevGalleries, response.data]);
+        onClose();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    console.log(formData);
+  };
 
   return (
     <Modal show={true} className="creationmodal">
       <Modal.Header closeButton className="modalheader" onClick={onClose}>
-        <Modal.Title className="modaltitle">Title</Modal.Title>
+        <Modal.Title className="modaltitle">New Gallery</Modal.Title>
       </Modal.Header>
       <Modal.Body className="modalbody">
         <Row className="modalframe">
-          <Col md={8} className="nameform">
-            <Form>
-              <Form.Group controlId="formGalleryName">
-                <Form.Control
+          <Col md={12} className="d-flex justify-content-center">
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <input
+                  name="name"
                   type="text"
-                  placeholder="Gallery name"
-                  className="border-square mt-5"
+                  placeholder="Gallery Name"
+                  onChange={handleInputChange}
+                  required
                 />
-              </Form.Group>
-            </Form>
-          </Col>
+              </div>
 
-          <Col md={4} className="nameform">
-            <Form>
-              <Form.Group controlId="formDate ">
-                <Form.Control className="border-square mt-5" type="date" />
-              </Form.Group>
-            </Form>
-          </Col>
+              <div className="form-group">
+                <input
+                  name="date"
+                  type="date"
+                  placeholder="Date"
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
 
-          <Col>
-            <Dropdown className="dropdownbox border-square">
-              <Dropdown.Toggle
-                ref={dropdownRef}
-                variant="light"
-                id="dropdownCustomers"
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  paddingRight: "1rem",
-                }}
-                className="border-square"
-              >
-                <span
-                  style={{
-                    marginLeft: "0.5rem",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
-                    maxWidth: "100%",
-                  }}
+              <div className="form-group">
+                <select
+                  name="clientId"
+                  onChange={handleInputChange}
+                  required
                 >
-                  Customers
-                </span>
-              </Dropdown.Toggle>
+                  <option value="">Select a Client</option>
+                  {clients.map((client) => (
+                    <option key={client.id} value={client.id}>
+                      {client.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-              <Dropdown.Menu
-                style={{ minWidth: "100%" }}
-                className="togglebox border-square"
-              >
-                <Dropdown.Item>Customer 1</Dropdown.Item>
-                <Dropdown.Item>Customer 2</Dropdown.Item>
-                <Dropdown.Item>Customer 3</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+              <div className="d-flex justify-content-end">
+                <Button className="modalbutton" type="submit">Create</Button>
+              </div>
+            </form>
           </Col>
         </Row>
       </Modal.Body>
-      <Modal.Footer>
-        <Button className="modalbutton">Create</Button>
-      </Modal.Footer>
     </Modal>
   );
 };

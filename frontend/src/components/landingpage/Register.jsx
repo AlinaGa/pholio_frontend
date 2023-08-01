@@ -8,7 +8,7 @@ const Register = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
-    companyname: "",
+    company: "",
     email: "",
     password: "",
   });
@@ -48,12 +48,12 @@ const Register = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="companyname">Company Name</label>
+              <label htmlFor="company">Company Name</label>
               <input
                 type="text"
-                id="companyname"
-                name="companyname"
-                value={formData.companyname}
+                id="company"
+                name="company"
+                value={formData.company}
                 onChange={handleInputChange}
                 required
               />

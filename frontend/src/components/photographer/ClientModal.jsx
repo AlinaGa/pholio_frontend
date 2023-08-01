@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Modal, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
 
-const ClientModal = ({ onClose }) => {
+const ClientModal = ({ onClose, clients, setClients }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
@@ -26,9 +26,9 @@ const ClientModal = ({ onClose }) => {
     axiosClient
       .post("/client", formData)
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
+        setClients([...clients, response.data])
         onClose();
-        navigate("/clients");
       })
       .catch((err) => {
         console.log(err);
