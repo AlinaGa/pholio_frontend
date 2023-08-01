@@ -5,22 +5,26 @@ import "./client.css";
 import "../../App.css";
 
 const ClientLogin = () => {
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const [isLoading, setIsloading] = useState(true);
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    // axios
-    //   .post("http://localhost:8000/client", {
-    //     email,
-    //     password,
-    //   })
-    //   .then((response) => {
-    //     const token = response.data.token;
-    //     console.log("Logged in successfully!", token);
-    //   })
-    //   .catch((error) => {
-    //     console.error("Login failed:", error.response.data.error);
-    //   });
+
+    axiosClient
+      .post("/client/login", data)
+      .then((response) => {
+        setFormData(response.data);
+        setIsloading(false);
+        navigate("/galleries");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
