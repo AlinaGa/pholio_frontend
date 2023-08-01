@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Modal, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
+import axiosClient from "../../axiosClient";
 
 const ClientModal = ({ onClose }) => {
   const navigate = useNavigate();
