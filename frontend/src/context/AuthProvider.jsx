@@ -14,7 +14,6 @@ export default function AuthProvider({ children }) {
       .post("/photographer/login", data)
       .then((response) => {
         setUser(response.data);
-        3;
         setIsloading(false);
         navigate("/galleries");
       })
@@ -28,7 +27,7 @@ export default function AuthProvider({ children }) {
       .then((response) => {
         setUser(response.data);
         setIsloading(false);
-        navigate("/client");
+        navigate("/clients");
       })
       .catch((err) => {
         console.log(err);

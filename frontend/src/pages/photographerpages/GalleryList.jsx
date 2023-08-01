@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axiosClient from "../../axiosClient";
 import Gallery from "../../components/photographer/Gallery";
 import CreateGallery from "../../components/photographer/CreateGallery";
@@ -7,8 +7,12 @@ import Sidebar from "../../components/photographer/Sidebar";
 import ImageCard from "../../components/photographer/ImageCard";
 import GalleryModal from "../../components/photographer/GalleryModal";
 import "../../components/photographer/photographer.css";
+import { AuthContext } from "../../context/AuthProvider";
+
 
 const GalleryList = () => {
+  const { user } = useContext(AuthContext);
+
   const [galleries, setGalleries] = useState([]);
   const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
 
@@ -29,10 +33,23 @@ const GalleryList = () => {
       });
   }, []);
 
+  const [clients, setClients] = useState([]);
+
+  useEffect(() => {
+    axiosClient
+      .get("/client")
+      .then((response) => {
+        setClients(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <>
       <div className="adminpage">
-        <Sidebar />
+        <Sidebar user={user && user} />
 
         <div className="main">
           <div className="topbar">
@@ -46,7 +63,8 @@ const GalleryList = () => {
           </div>
         </div>
       </div>
-      {isGalleryModalOpen && <GalleryModal onClose={toggleGalleryModal} />}
+      {isGalleryModalOpen && <GalleryModal onClose={toggleGalleryModal}
+        clients={clients} setGalleries={setGalleries} />}
     </>
   );
 };

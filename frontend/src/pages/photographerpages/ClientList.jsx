@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axiosClient from "../../axiosClient";
 import Client from "../../components/photographer/Client";
 import CreateClient from "../../components/photographer/CreateClient";
@@ -7,7 +7,11 @@ import Sidebar from "../../components/photographer/Sidebar";
 import ClientModal from "../../components/photographer/ClientModal";
 import "../../components/photographer/photographer.css";
 
+import { AuthContext } from "../../context/AuthProvider";
+
 const ClientList = () => {
+  const { user } = useContext(AuthContext);
+
 
   const [clients, setClients] = useState([]);
 
@@ -21,7 +25,6 @@ const ClientList = () => {
     axiosClient
       .get("/client")
       .then((response) => {
-        console.log(response.data);
         setClients(response.data);
       })
       .catch((err) => {
@@ -32,7 +35,7 @@ const ClientList = () => {
   return (
     <>
       <div className="adminpage">
-        <Sidebar />
+        <Sidebar user={user && user} />
 
         <div className="main">
           <div className="topbar">
@@ -47,7 +50,7 @@ const ClientList = () => {
           </div>
         </div>
       </div>
-      {isClientModalOpen && <ClientModal onClose={toggleClientModal} />}
+      {isClientModalOpen && <ClientModal onClose={toggleClientModal} clients={clients} setClients={setClients} />}
     </>
   );
 };

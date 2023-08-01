@@ -4,7 +4,10 @@ import "../../components/photographer/photographer.css";
 import LandingNavbar from "../../components/landingpage/LandingNavbar";
 import PLogin from "../../components/photographer/PLogin";
 
+
+
 const PhotographerLoginPage = () => {
+
   return (
     <>
       <div className="pagebody">

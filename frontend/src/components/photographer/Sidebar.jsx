@@ -5,28 +5,9 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./photographer.css";
 
-const Sidebar = () => {
-    const [photographerName, setPhotographerName] = useState("");
-
-
-    useEffect(() => {
-        axiosClient
-            .get("/photographer")
-            .then((response) => {
-
-                console.log(response.data);
-                const { name } = response.data;
-                setPhotographerName(name);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }, []);
+const Sidebar = ({ user }) => {
 
     return (
-
-
-
         <div className="sidebar">
 
             <div className="sidenavlogo">
@@ -34,10 +15,10 @@ const Sidebar = () => {
             </div>
             <div className="sidenavprofile">
                 <div className="sidenavdetail">
-                    <span>{photographerName}</span>;
+                    <span>{user?.name}</span>
 
                 </div>
-                <span className="sidenavdetail">Company Name</span>
+                <span className="sidenavdetail">{user?.company}</span>
 
             </div>
 
