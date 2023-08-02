@@ -16,7 +16,6 @@ const ClientLogin = () => {
 
   const { clientLogin } = useContext(AuthContext);
 
-
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -47,7 +46,6 @@ const ClientLogin = () => {
               // value={formData.email}
               onChange={handleInputChange}
               required
-
             />
             {/* <input className="form-control" type="text" /> */}
             <label htmlFor="password"></label>
@@ -59,7 +57,6 @@ const ClientLogin = () => {
               // value={formData.password}
               onChange={handleInputChange}
               required
-
             />
             {/* <input className="form-control" type="text" /> */}
           </div>

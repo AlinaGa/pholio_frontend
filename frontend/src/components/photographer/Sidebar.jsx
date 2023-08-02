@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import axiosClient from "../../axiosClient";
 
 import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./photographer.css";
 
 const Sidebar = ({ user }) => {
-    console.log(user);
+
+   
     return (
         <div className="sidebar">
 
@@ -55,16 +56,10 @@ const Sidebar = ({ user }) => {
                         <Link to="/login" className="bottomlink2 side-link  list-group-item list-group-item-action">
                             <i class="bi bi-arrow-right-square-fill"></i>                            Log Out
                         </Link>
-
                     </div>
-
                 </div>
-
             </div>
         </div >
-
-
-
     );
 };
 

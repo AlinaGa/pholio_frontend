@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axiosClient from "../../axiosClient";
+// import axiosClient from "../../axiosClient";
 import { useNavigate } from "react-router-dom";
 // import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./photographer.css";
@@ -26,17 +26,6 @@ const PLogin = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     login(formData);
-
-    // axiosClient
-    //   .post("/photographer/login", formData)
-    //   .then((response) => {
-    //     console.log(response.data);
-    //     navigate("/galleries");
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-    // console.log(formData);
   };
 
   return (
@@ -52,7 +41,7 @@ const PLogin = () => {
                 type="email"
                 id="email"
                 name="email"
-                // value={formData.email} 
+                // value={formData.email}
                 onChange={handleInputChange}
                 required
               />

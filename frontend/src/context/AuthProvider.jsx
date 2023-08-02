@@ -34,6 +34,7 @@ export default function AuthProvider({ children }) {
         console.log(err);
       });
   };
+
   const signup = (data) => {
     axiosClient
       .post("/photographer/signup", data)
