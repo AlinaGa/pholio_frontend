@@ -14,6 +14,8 @@ import axiosClient from "../../axiosClient";
 const Gallery = ({ gallery, client }) => {
   const navigate = useNavigate();
   const [thumbnail, setThumbnail] = useState()
+
+
   useEffect(() => {
     console.log(gallery._id);
     axiosClient.get(`/image/thumbnail?gallery=${gallery._id}`)
@@ -38,12 +40,12 @@ const Gallery = ({ gallery, client }) => {
       ></Card.Img>
       <Card.Body className="gallerycontent">
         <div className="gallerytitle">{gallery.name}</div>
-        <div className="galleryinfo ">
+        {/* <div className="galleryinfo ">
           <span className="imageamount">56 Gallery images</span>
           <span className="imageamount">Final Images</span>
-        </div>
+        </div> */}
         <Badge pill className="assignedclient">
-          {/* {client.name} */}
+          {client.name}
         </Badge>
       </Card.Body>
     </Card>

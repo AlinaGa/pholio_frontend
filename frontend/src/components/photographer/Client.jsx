@@ -11,7 +11,7 @@ const Client = ({ client }) => {
 
     return (
         <Card className='client'
-            onClick={() => navigate(`/client/${client._id}`)}
+        // onClick={() => navigate(`/client/${client._id}`)}
         >
 
             <Card.Body className='clientcontent'>

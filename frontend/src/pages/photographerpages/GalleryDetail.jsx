@@ -41,6 +41,9 @@ export default function GalleryDetail() {
           <div className="topbar">
             <Topbar />
           </div>
+          <div>
+            <h2 className="dashboardpagetitle"> Upload your Images in this step. These Images will all be shown to your Client.</h2>
+          </div>
           <div className="content">
             <div className="imagescontainer">
               <UploadButton gallery={id} setImages={setImages} />

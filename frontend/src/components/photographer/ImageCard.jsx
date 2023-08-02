@@ -11,11 +11,11 @@ const ImageCard = ({ image }) => {
       {/* <button className="downloadimage">
         <i className="bi bi-download"></i>
       </button> */}
-      <button className="deleteimage">
+      {/* <button className="deleteimage">
         <i className="bi bi-trash3"></i>
-      </button>
+      </button> */}
       <img className="uploadedimage" src={image.url} />
-      <div className="imagecardbody"> {image.name.split("-image-")[1]} </div>
+      {/* <div className="imagecardbody"> {image.name.split("-image-")[1]} </div> */}
     </div>
   );
 };

@@ -46,7 +46,7 @@ const ClientModal = ({ onClose, clients, setClients }) => {
           <Col md={12} className="d-flex justify-content-center">
             <form onSubmit={handleSubmit}>
 
-              <div className="form-group">
+              <div className="form-group creationmodalform">
                 {/* <label htmlFor="email">E-Mail</label> */}
                 <input
                   name="email"

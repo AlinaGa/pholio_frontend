@@ -39,6 +39,9 @@ const ClientList = () => {
           <div className="topbar">
             <Topbar />
           </div>
+          <div>
+            <h2 className="dashboardpagetitle"> Create your Clients here. Give them a Password you can remember. After creating tell them their Login credentials so they can log in to see their Galleries. </h2>
+          </div>
           <div className="content">
             <CreateClient onClickCreate={toggleClientModal} />
 

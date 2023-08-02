@@ -4,7 +4,6 @@ import Gallery from "../../components/photographer/Gallery";
 import CreateGallery from "../../components/photographer/CreateGallery";
 import Topbar from "../../components/photographer/Topbar";
 import Sidebar from "../../components/photographer/Sidebar";
-import ImageCard from "../../components/photographer/ImageCard";
 import GalleryModal from "../../components/photographer/GalleryModal";
 import "../../components/photographer/photographer.css";
 import { AuthContext } from "../../context/AuthProvider";
@@ -15,6 +14,8 @@ const GalleryList = () => {
 
   const [galleries, setGalleries] = useState([]);
   const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
+  const [clients, setClients] = useState([]);
+
 
   const toggleGalleryModal = () => {
     setIsGalleryModalOpen((prevState) => !prevState);
@@ -32,7 +33,6 @@ const GalleryList = () => {
       });
   }, []);
 
-  const [clients, setClients] = useState([]);
 
   useEffect(() => {
     axiosClient
@@ -54,10 +54,15 @@ const GalleryList = () => {
           <div className="topbar">
             <Topbar />
           </div>
+          <div>
+            <h2 className="dashboardpagetitle"> Create Galleries for your Clients here. You can assing a Client to a Gallery. This way every Client only sees the Galleries, that are meant for him. </h2>
+          </div>
           <div className="content">
             <CreateGallery onClickCreate={toggleGalleryModal} />
             {galleries.map((gallery) => {
-              return <Gallery gallery={gallery} key={gallery._id} />;
+              const client = clients.find((c) => c._id === gallery.client);
+
+              return <Gallery gallery={gallery} client={client} key={gallery._id} />;
             })}
           </div>
         </div>
