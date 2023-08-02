@@ -17,8 +17,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 
@@ -310,6 +312,14 @@
   background-size: cover;
 }
 
+.login-container {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  padding: 4rem 5rem;
+  flex-direction: column;
+}
+
 .login-section {
   background-color: rgb(255, 255, 255);
   height: 100vh;
@@ -362,18 +372,42 @@
 
 
 /*ClientList & Client */
+.createclient {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 350px;
+  text-align: center;
+  margin: 1.8rem 1.8rem;
+  position: relative;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+}
 
 .client {
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 450px;
+  height: 250px;
+  width: 350px;
   text-align: center;
-  margin: 1rem 1rem;
+  margin: 1.8rem 1.8rem;
   position: relative;
-  border: none;
+  border: 6px solid var(--purple);
+  border-radius: 10px;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+
+.createclient:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.clientcontent {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -387,6 +421,7 @@
 .clientname {
   color: var(--text);
   font-size: 1.6rem;
+  margin-bottom: 20px;
 }
 
 .galleryamount {}
@@ -404,13 +439,15 @@
   flex-direction: column;
   height: 350px;
   width: 350px;
-  margin: 1rem 1rem;
+  margin: 1.8rem 1.8rem;
   position: relative;
   border: none;
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   justify-content: center;
 }
+
+.gallery:hover {}
 
 .galleryimage {
   height: 200px;
@@ -444,7 +481,7 @@
   height: 350px;
   width: 350px;
   text-align: center;
-  margin: 1rem 1rem;
+  margin: 1.8rem 1.8rem;
   position: relative;
   border: none;
   background-color: white;

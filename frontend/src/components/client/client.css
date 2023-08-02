@@ -122,12 +122,13 @@ button {
     object-position: 0 -80px;
 }
 
-.login-container {
+.clogin-container {
     width: 35vw;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
     top: 240px;
     left: 50%;
+    border-radius: 10px;
     transform: translateX(-50%);
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
     z-index: 1;

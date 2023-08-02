@@ -34,7 +34,7 @@ const Gallery = ({ gallery, client }) => {
     >
       <Card.Img
         className="galleryimage"
-        src={thumbnail || "../src/assets/11_tn.jpg"}
+        src={thumbnail || "../src/assets/addimages.jpg"}
       ></Card.Img>
       <Card.Body className="gallerycontent">
         <div className="gallerytitle">{gallery.name}</div>

@@ -7,7 +7,7 @@ import "./photographer.css";
 
 const Sidebar = ({ user }) => {
 
-   
+
     return (
         <div className="sidebar">
 
