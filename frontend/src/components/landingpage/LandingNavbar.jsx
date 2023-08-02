@@ -23,21 +23,36 @@ const LandingNavbar = () => {
 
             {/* Prototype without real Linking */}
             <div className="landingnavleft">
-              <Navbar.Brand className="pholiologo fw-bold fs-1" href="#home">
-                Pholio
-              </Navbar.Brand>
+              <NavLink to="/">
+                <Navbar.Brand className="pholiologo fw-bold fs-1" href="#home">
+                  Pholio
+                </Navbar.Brand></NavLink>
             </div>
             <div className="landingnavright">
               {/* make toggle cart button a component and add it here  */}
               {/* <NavLink>Features</NavLink> */}
 
-              <button>
-                <NavLink to="/login">Login</NavLink>
-              </button>
 
-              <button className="register">
-                <NavLink to="/register">Register</NavLink>
-              </button>
+
+
+              <NavLink to="/clogin">
+                <button className="navbtnnormal">
+                  Client Login
+                </button>
+              </NavLink>
+
+
+              <NavLink to="/login">
+                <button className="navbtnnormal">
+                  Admin Login
+                </button>
+              </NavLink>
+
+              <NavLink to="/register">
+                <button className="navbtndark">
+                  Register
+                </button>
+              </NavLink>
             </div>
           </Nav>
         </Navbar.Collapse>

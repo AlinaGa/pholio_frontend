@@ -8,9 +8,9 @@ import "../../App.css";
 const ImageCard = ({ image }) => {
   return (
     <div className="uploadedimagecontainer">
-      <button className="downloadimage">
+      {/* <button className="downloadimage">
         <i className="bi bi-download"></i>
-      </button>
+      </button> */}
       <button className="deleteimage">
         <i className="bi bi-trash3"></i>
       </button>

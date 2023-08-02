@@ -128,11 +128,44 @@
   flex-direction: column;
   margin-top: 30px;
   text-align: center;
+  align-items: center;
 }
 
-.sidenavdetail {
-  padding: 10px;
+.sidenavprofile img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
+
+.sidenavname {
+  padding: 10px;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sidenavcompany {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*  
+
+.sidenavname {
+  padding: 10px;
+  font-family: 'Nothing you could do';
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sidenavcompany {
+  font-family: 'Nothing you could do';
+  font-size: 1rem;
+  font-weight: 600;
+} */
 
 .sidebottom {
   position: absolute;
@@ -151,7 +184,7 @@
 
 .sidenavlink :hover {
   background-color: var(--darkpurple);
-  color: white;
+  color: white !important;
 }
 
 .side-link {
@@ -182,7 +215,7 @@
 
 .sidebar a i {
   padding-right: 20px;
-
+  font-size: 1.2rem;
 }
 
 

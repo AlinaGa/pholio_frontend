@@ -6,75 +6,61 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./photographer.css";
 
 const Sidebar = ({ user }) => {
-  return (
-    <div className="sidebar">
-      <div className="sidenavlogo">
-        <span className="pholiologo">Pholio</span>
-      </div>
-      <div className="sidenavprofile">
-        <div className="sidenavdetail">
-          <span>{user?.name}</span>
-          {/* <span>{user?.name && user.name.toUpperCase()}</span> */}
-        </div>
-        <span className="sidenavdetail">
-          {user?.company}
-          {/* {user?.company && user.company.toUpperCase()} */}
-        </span>
-      </div>
 
-      <div className="sidenavlinks">
-        <hr className="sidenavdivider" />
-        <div className="sidenavlink">
-          <Link to="/" className="side-link">
-            <i className="bi bi-house-check-fill"></i>
-            Home
-          </Link>
-        </div>
-        <hr className="sidenavdivider" />
-        <div className="sidenavlink">
-          <Link to="/galleries" className="side-link">
-            <i className="bi bi-grid-fill"></i>
-            Galleries
-          </Link>
-        </div>
-        <hr className="sidenavdivider" />
-        <div className="sidenavlink">
-          <Link
-            to="/clients"
-            className="side-link list-group-item list-group-item-action"
-          >
-            <i className="bi bi-person-lines-fill"></i>
-            Clients
-          </Link>
-        </div>
-        <hr className="sidenavdivider" />
+   
+    return (
+        <div className="sidebar">
 
-        <div className="sidebottom">
-          <hr className="sidenavdivider" />
+            <div className="sidenavlogo">
+                <span className="pholiologo">Pholio</span>
+            </div>
+            <div className="sidenavprofile">
+                <img src="../../src/assets/sarah.jpg"></img>
+                <span className="sidenavname">{user?.name}</span>
 
-          <div className="sidenavlink">
-            <Link
-              to="/help"
-              className="bottomlink1 side-link  list-group-item list-group-item-action"
-            >
-              <i className="bi bi-heart-fill"></i>
-              Help
-            </Link>
-          </div>
+                <span className="sidenavcompany">{user?.company}</span>
 
-          <div className="sidenavlink">
-            <Link
-              to="/login"
-              className="bottomlink2 side-link  list-group-item list-group-item-action"
-            >
-              <i className="bi bi-heart-fill"></i>
-              Log Out
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+            </div>
+
+            <div className="sidenavlinks">
+                <hr className="sidenavdivider" />
+
+                <div className="sidenavlink">
+                    <Link to="/galleries" className="side-link">
+                        <i className="bi bi-grid-fill"></i>
+                        Galleries
+                    </Link>
+                </div>
+                <hr className="sidenavdivider" />
+                <div className="sidenavlink">
+
+                    <Link to="/clients" className="side-link list-group-item list-group-item-action">
+                        <i className="bi bi-person-lines-fill"></i>
+                        Clients
+                    </Link>
+                </div>
+                <hr className="sidenavdivider" />
+
+                <div className="sidebottom">
+                    <hr className="sidenavdivider" />
+
+                    <div className="sidenavlink">
+
+                        <Link to="/help" className="bottomlink1 side-link  list-group-item list-group-item-action">
+                            <i class="bi bi-patch-question-fill"></i>
+                            Help                  </Link>
+                    </div>
+
+                    <div className="sidenavlink">
+
+                        <Link to="/login" className="bottomlink2 side-link  list-group-item list-group-item-action">
+                            <i class="bi bi-arrow-right-square-fill"></i>                            Log Out
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </div >
+    );
 };
 
 export default Sidebar;

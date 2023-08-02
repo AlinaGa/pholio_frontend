@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import { PersonCheck, Globe2, Tags } from "react-bootstrap-icons";
@@ -37,7 +38,9 @@ const HomePage = () => {
                         <h2 className="title-text">
                             Clients in one place
                         </h2>
-                        <button className="startnowbtn">Start for free</button>
+                        <Link to="/register">  <button className="startnowbtn">
+                            Start for free
+                        </button></Link>
                     </div>
                 </div>
             </header>
@@ -47,16 +50,16 @@ const HomePage = () => {
 
 
             <div className="intro">
-                <h2 className="sec1title">  Everything you need in one place </h2>
+                <h2 className="sec1title">Everything you need in one place</h2>
                 <div className="introtext">
                     <p>
                         We offer photographers a simple solution to showcase their images to clients. Create unlimited galleries in just a few easy steps and let your clients see all their photoshoots at a glance. Your clients have never had an easier time viewing their pictures. Increase your image sales and strenghten your customer retention with our nice and clean design that perfectly stages your pictures!
                     </p>
-                    <img src={shop} alt="shop dashboard" width="500" />
+                    <img src="../../src/assets/galleries.jpg" alt="shop dashboard" width="500" />
                 </div>
-                <Button variant="btn" className="startnowbtn mx-3 mt-4">
-                    Create Your Free Account
-                </Button>
+                <Link to="/register"> <Button variant="btn" className="startnowbtn mx-3 mt-4">
+                    Create your free Account
+                </Button></Link>
                 <hr className="divider" />
             </div>
 
@@ -93,6 +96,22 @@ const HomePage = () => {
 
                     </div>
                 </div>
+            </div>
+
+            <div className="intro">
+                <h2 className="sec1title">  Are you a Client? </h2>
+                <div className="introtext">
+                    <img src={shop} alt="shop dashboard" width="500" />
+
+                    <p>You just had an amazing photoshoot with your favourite photographer and want to see the moments he has captured?
+                        <br />
+                        Discover the ultimate gallery experience tailored for you! Browse through your personalized galleries, showcasing the brilliant work your photographer captured.
+                        <br /> With a user-friendly interface, relive every moment at a glance. Elevate your image viewing and cherish unforgettable memories.                    </p>
+                </div>
+                <Link to="/clogin"> <Button variant="btn" className="startnowbtn mx-3 mt-4">
+                    Login as a Client
+                </Button></Link>
+                <hr className="divider" />
             </div>
 
 

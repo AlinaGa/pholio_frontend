@@ -29,30 +29,31 @@ const ClientLogin = () => {
     event.preventDefault();
     clientLogin(formData);
   };
+
   return (
     <>
       <div className="clientlogin">
-        <h3>Login to see your Galleries</h3>
+        <h3>Log in to see your Galleries</h3>
 
         <form onSubmit={handleSubmit} className="clientlogincontainer">
           <div className="clientloginfields">
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email"> </label>
             <input
               name="email"
               type="text"
               id="email"
-              className="form-control"
+              placeholder="E-Mail"
               // value={formData.email}
               onChange={handleInputChange}
               required
             />
             {/* <input className="form-control" type="text" /> */}
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password"></label>
             <input
               name="password"
               type="password"
               id="password"
-              className="form-control"
+              placeholder="Password"
               // value={formData.password}
               onChange={handleInputChange}
               required
@@ -60,7 +61,7 @@ const ClientLogin = () => {
             {/* <input className="form-control" type="text" /> */}
           </div>
           <button className="register" type="submit">
-            Log In!
+            Login
           </button>
         </form>
       </div>
