@@ -44,7 +44,7 @@ const LandingNavbar = () => {
 
               <NavLink to="/login">
                 <button className="navbtnnormal">
-                  Admin Login
+                  User Login
                 </button>
               </NavLink>
 
