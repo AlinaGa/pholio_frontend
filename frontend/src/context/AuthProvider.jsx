@@ -13,7 +13,7 @@ export default function AuthProvider({ children }) {
     axiosClient
       .get("/photographer/profile")
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         setUser(response.data);
         setIsloading(false);
       })
@@ -59,7 +59,6 @@ export default function AuthProvider({ children }) {
       });
   };
 
-
   const clientLogin = (data) => {
     axiosClient
       .post("/client/login", data)
@@ -74,7 +73,9 @@ export default function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ user, isLoading, login, signup, clientLogin, logout }}>
+    <AuthContext.Provider
+      value={{ user, isLoading, login, signup, clientLogin, logout }}
+    >
       {children}
     </AuthContext.Provider>
   );

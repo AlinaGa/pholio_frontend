@@ -1,39 +1,66 @@
-import React from 'react';
-import Album from '../../components/client/album';
-import ClientNavbar from '../../components/client/ClientNavbar';
-import '../../components/client/client.css';
-import InfoBox from '../../components/client/Infobox';
+import React, { useState, useEffect, useContext } from "react";
+import axiosClient from "../../axiosClient";
+
+import Album from "../../components/client/Album";
+import ClientNavbar from "../../components/client/ClientNavbar";
+import "../../components/client/client.css";
+import InfoBox from "../../components/client/Infobox";
+import { AuthContext } from "../../context/AuthProvider";
 
 const AlbumList = () => {
-    return (<>
-        <ClientNavbar />
-        <div className='albumlist'>
-            <section className='albumheadingsection'>
-                <h1 className='yourgalleries'>Your Galleries</h1>
-            </section>
+  const { user } = useContext(AuthContext);
 
-            <hr className='hr' />
+  const [galleries, setGalleries] = useState([]);
 
-            <div className='albums'>
+  useEffect(() => {
+    axiosClient
+      .get("/gallery")
+      .then((response) => {
+        setGalleries(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
-                <Album />
+  return (
+    <>
+      <ClientNavbar />
+      <div className="albumlist">
+        <section className="albumheadingsection">
+          <h1 className="yourgalleries">Your Galleries</h1>
+        </section>
+        <p className="description">
+          <i>
+            Here you can see all of your galleries. Click on a Gallery to see
+            the beautiful images the photographer has captured!!
+          </i>
+        </p>
 
-            </div >
+        <hr className="hr" />
+
+        <div className="albums">
+          {galleries.map((gallery) => {
+            return <Album gallery={gallery} key={gallery._id} />;
+          })}
+
+          {/* <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album />
+                <Album /> */}
         </div>
-        {/* <InfoBox /> */}
+      </div>
+      {/* <InfoBox /> */}
     </>
-    );
-}
+  );
+};
 
 export default AlbumList;
