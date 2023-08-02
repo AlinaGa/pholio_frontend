@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./photographer.css";
 
 const Sidebar = ({ user }) => {
-
+    console.log(user);
     return (
         <div className="sidebar">
 

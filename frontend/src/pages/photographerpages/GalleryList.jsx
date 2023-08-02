@@ -48,7 +48,7 @@ const GalleryList = () => {
   return (
     <>
       <div className="adminpage">
-        <Sidebar user={user && user} />
+        <Sidebar user={user} />
 
         <div className="main">
           <div className="topbar">

@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import axiosClient from "../axiosClient";
 import { useNavigate } from "react-router-dom";
 
@@ -8,6 +8,19 @@ export default function AuthProvider({ children }) {
   const navigate = useNavigate();
   const [user, setUser] = useState();
   const [isLoading, setIsloading] = useState(true);
+
+  useEffect(() => {
+    axiosClient
+      .get("/photographer/profile")
+      .then((response) => {
+        console.log(response.data);
+        setUser(response.data);
+        setIsloading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const login = (data) => {
     axiosClient

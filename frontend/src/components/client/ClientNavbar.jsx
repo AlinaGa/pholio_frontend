@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import "./client.css";
 import "../../App.css";
 
 const ClientNavbar = () => {
+  const { user } = useContext(AuthContext);
+
   return (
     <>
       <Navbar collapseOnSelect expand="sm" className="sticky-top">
@@ -25,7 +28,7 @@ const ClientNavbar = () => {
               <Navbar.Brand className="pholiologo fw-bold fs-1" href="#home">
                 Pholio
               </Navbar.Brand></NavLink></div>
-            <div className="clientnavmiddle">My Photographer</div>
+            <div className="clientnavmiddle">{user?.photographer?.name}</div>
             <div className="clientnavright">
               {/* make toggle cart button a component and add it here  */}
 

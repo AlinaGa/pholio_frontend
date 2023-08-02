@@ -139,7 +139,6 @@
   margin-bottom: 20px;
 }
 
-/*  DIFFERENT FONT
 .sidenavname {
   padding: 10px;
   font-family: 'Roboto';
@@ -151,7 +150,9 @@
   font-family: 'Roboto';
   font-size: 1rem;
   font-weight: 400;
-} */
+}
+
+/*  
 
 .sidenavname {
   padding: 10px;
@@ -164,7 +165,7 @@
   font-family: 'Nothing you could do';
   font-size: 1rem;
   font-weight: 600;
-}
+} */
 
 .sidebottom {
   position: absolute;
