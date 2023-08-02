@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 import "./client.css";
 import "../../App.css";
@@ -13,7 +14,7 @@ const Album = () => {
         <Card.Title>GalleryName</Card.Title>
         <div className="albumbuttons ">
           <button className="buttonwhite">Download</button>
-          <button className="buttonwhite">View Gallery</button>
+          <Link to="/shop"> <button className="buttonwhite">View Gallery</button></Link>
         </div>
       </Card.ImgOverlay>
     </Card>
