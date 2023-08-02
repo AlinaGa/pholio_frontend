@@ -48,7 +48,7 @@ function App() {
         <Route path="/gallery/:id" element={<GalleryDetail />} />
         <Route path="/clogin" element={<LoginClient />} />
         <Route path="/albums" element={<AlbumList />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/:id" element={<Shop />} />
 
         {/* <Route path="/:company/login" element={<LoginClient />
         } /> */}

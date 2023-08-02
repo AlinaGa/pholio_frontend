@@ -41,6 +41,15 @@ const Sidebar = ({ user }) => {
                 </div>
                 <hr className="sidenavdivider" />
 
+                <div className="sidenavlink">
+
+                    <Link to="/clients" className="side-link list-group-item list-group-item-action">
+                        <i className="bi bi-gear-fill"></i>
+                        Settings
+                    </Link>
+                </div>
+                <hr className="sidenavdivider" />
+
                 <div className="sidebottom">
                     <hr className="sidenavdivider" />
 

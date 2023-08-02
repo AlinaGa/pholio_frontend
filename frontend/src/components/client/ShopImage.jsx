@@ -4,24 +4,13 @@ import axiosClient from "../../axiosClient";
 import "./client.css";
 import "../../App.css";
 
-const ShopImage = () => {
-  const [images, setImages] = useState([]);
-  useEffect(() => {
-    axiosClient
-      .get("/image")
-      .then((res) => {
-        setImages(res.data);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, []);
+const ShopImage = ({ img }) => {
+
 
   return (
     <>
-      {images.map((res) => {
-        return <img className="shopimage" src={res.url} />;
-      })}
+      <img className="shopimage" src={img.url} alt="Shop Image" />
+
 
       {/* <img className="shopimage" src="..\src\assets\1.jpg" /> */}
 

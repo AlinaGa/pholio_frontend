@@ -21,6 +21,10 @@ button {
     border-radius: 50%;
 }
 
+.clientpage {
+    height: 100%;
+    width: 100%;
+}
 
 /* ClientNavbar */
 
@@ -30,7 +34,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     top: 0;
     padding: 0;
@@ -288,6 +292,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
+
 }
 
 .shopbanner {
@@ -324,15 +329,17 @@ button {
 
 /* ShopGallery MASONRY Layout STARTS here*/
 
-.shopimagescontainer {
-    line-height: 0;
+.shoppage {
+    /* width: 100%; */
+    overflow-x: hidden;
+}
 
-    -webkit-column-count: 5;
-    -webkit-column-gap: 0px;
-    -moz-column-count: 5;
-    -moz-column-gap: 0px;
+.shopimagescontainer {
+    /* line-height: 0; */
+    margin: 0 20px;
     column-count: 5;
     column-gap: 20px;
+    overflow-x: hidden !important;
 
 }
 
@@ -350,7 +357,7 @@ button {
 }
 
 /*Cart Start */
-.cartsection {}
+/* .cartsection {}
 
 .cart {
     position: fixed;
@@ -378,4 +385,4 @@ button {
     background-color: #fff;
     border: none;
     cursor: pointer;
-}
+} */

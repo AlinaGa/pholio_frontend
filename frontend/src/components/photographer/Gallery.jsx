@@ -21,7 +21,7 @@ const Gallery = ({ gallery, client }) => {
     axiosClient.get(`/image/thumbnail?gallery=${gallery._id}`)
       .then((response) => {
         setThumbnail(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       })
       .catch((err) => {
         console.log(err);

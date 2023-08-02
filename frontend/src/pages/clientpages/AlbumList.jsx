@@ -25,26 +25,27 @@ const AlbumList = () => {
 
   return (
     <>
-      <ClientNavbar />
-      <div className="albumlist">
-        <section className="albumheadingsection">
-          <h1 className="yourgalleries">Your Galleries</h1>
-        </section>
-        <p className="description">
-          <i>
-            Here you can see all of your galleries. Click on a Gallery to see
-            the beautiful images the photographer has captured!!
-          </i>
-        </p>
+      <div className="clientpage">
+        <ClientNavbar />
+        <div className="albumlist">
+          <section className="albumheadingsection">
+            <h1 className="yourgalleries">Your Galleries</h1>
+          </section>
+          <p className="description">
+            <i>
+              Here you can see all of your galleries. Click on a Gallery to see
+              the beautiful images your photographer has captured!
+            </i>
+          </p>
 
-        <hr className="hr" />
+          {/* <hr className="hr" /> */}
 
-        <div className="albums">
-          {galleries.map((gallery) => {
-            return <Album gallery={gallery} key={gallery._id} />;
-          })}
+          <div className="albums">
+            {galleries.map((gallery) => {
+              return <Album gallery={gallery} key={gallery._id} />;
+            })}
 
-          {/* <Album />
+            {/* <Album />
                 <Album />
                 <Album />
                 <Album />
@@ -56,6 +57,7 @@ const AlbumList = () => {
                 <Album />
                 <Album />
                 <Album /> */}
+          </div>
         </div>
       </div>
       {/* <InfoBox /> */}

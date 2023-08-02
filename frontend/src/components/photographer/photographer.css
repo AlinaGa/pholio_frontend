@@ -413,6 +413,7 @@
 }
 
 .createclient:hover {
+  cursor: pointer;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
 }
 
@@ -435,7 +436,7 @@
   margin-bottom: 20px;
 }
 
-.galleryamount {}
+/* .galleryamount {} */
 
 .createicon {
   font-size: 6rem;
@@ -458,7 +459,15 @@
   justify-content: center;
 }
 
-.gallery:hover {}
+.creategallery:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.gallery:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
 
 .galleryimage {
   height: 200px;

@@ -29,7 +29,8 @@ const Album = ({ gallery }) => {
 
   return (
     <Card className="album" onClick={() => navigate(`/shop/${gallery._id}`)}>
-      <Card.Img src={thumbnail}></Card.Img>
+      <Card.Img src={thumbnail || "../src/assets/noimages.jpg"}
+      ></Card.Img>
       <div className="darkoverlay"></div>
       <Card.ImgOverlay className="albumcontent">
         <Card.Title>{gallery.name}</Card.Title>

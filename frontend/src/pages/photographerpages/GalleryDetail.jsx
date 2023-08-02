@@ -32,6 +32,10 @@ export default function GalleryDetail() {
         console.log(err);
       });
   }, []);
+
+
+
+
   return (
     <>
       <div className="adminpage">
@@ -42,7 +46,7 @@ export default function GalleryDetail() {
             <Topbar />
           </div>
           <div>
-            <h2 className="dashboardpagetitle"> Upload your Images in this step. These Images will all be shown to your Client.</h2>
+            <h2 className="dashboardpagetitle"> Upload your Images in this step. They will be shown to your Client in the Gallery.</h2>
           </div>
           <div className="content">
             <div className="imagescontainer">
