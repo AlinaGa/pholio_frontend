@@ -23,7 +23,7 @@ const Topbar = () => {
 
             {/* Prototype without real Linking */}
             <div className="adminnavleft">{/* <button>back</button> */}</div>
-            <div className="adminnavmiddle">Current Page</div>
+            <div className="adminnavmiddle">Photographer Dashboard </div>
             <div className="adminnavright">
               {/* make toggle cart button a component and add it here  */}
 

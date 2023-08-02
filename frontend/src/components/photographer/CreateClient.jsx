@@ -7,7 +7,7 @@ import "../../App.css";
 
 const CreateClient = ({ onClickCreate }) => {
     return (
-        <Card className='client' onClick={onClickCreate}>
+        <Card className='createclient' onClick={onClickCreate}>
             <i className="createicon bi bi-patch-plus-fill"></i>
 
             <div className='clientname'>Create new Client</div>

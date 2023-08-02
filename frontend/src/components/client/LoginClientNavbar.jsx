@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./client.css";
 import "../../App.css";
 
-const ClientNavbar = () => {
+const LoginClientNavbar = () => {
   const { user } = useContext(AuthContext);
 
   return (
@@ -32,12 +32,12 @@ const ClientNavbar = () => {
             <div className="clientnavright">
               {/* make toggle cart button a component and add it here  */}
 
-              <button>
+              {/* <button>
                 <NavLink to="/albums">My Galleries</NavLink>
               </button>
               <button>
                 <NavLink to="/clogin">Log Out</NavLink>
-              </button>
+              </button> */}
             </div>
           </Nav>
         </Navbar.Collapse>
@@ -46,4 +46,4 @@ const ClientNavbar = () => {
   );
 };
 
-export default ClientNavbar;
+export default LoginClientNavbar;

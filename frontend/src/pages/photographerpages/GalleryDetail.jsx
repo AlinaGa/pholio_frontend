@@ -1,5 +1,5 @@
 //Upload happens here//Upload happens here
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axiosClient from "../../axiosClient";
@@ -8,12 +8,16 @@ import Sidebar from "../../components/photographer/Sidebar";
 import ImageCard from "../../components/photographer/ImageCard";
 import UploadButton from "../../components/photographer/UploadButton";
 import { useParams } from "react-router-dom";
+import { AuthContext } from "../../context/AuthProvider";
+
 
 // import "../../components/client/Client.css";
 import "../../App.css";
 import "./GalleryDetail.css";
 
 export default function GalleryDetail() {
+  const { user } = useContext(AuthContext);
+
   const { id } = useParams();
   const [images, setImages] = useState([]);
 
@@ -31,7 +35,7 @@ export default function GalleryDetail() {
   return (
     <>
       <div className="adminpage">
-        <Sidebar />
+        <Sidebar user={user} />
 
         <div className="main">
           <div className="topbar">
