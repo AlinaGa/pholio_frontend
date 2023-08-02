@@ -14,11 +14,10 @@ const Sidebar = ({ user }) => {
                 <span className="pholiologo">Pholio</span>
             </div>
             <div className="sidenavprofile">
-                <div className="sidenavdetail">
-                    <span>{user?.name}</span>
+                <img src="../../src/assets/sarah.jpg"></img>
+                <span className="sidenavname">{user?.name}</span>
 
-                </div>
-                <span className="sidenavdetail">{user?.company}</span>
+                <span className="sidenavcompany">{user?.company}</span>
 
             </div>
 
@@ -47,16 +46,14 @@ const Sidebar = ({ user }) => {
                     <div className="sidenavlink">
 
                         <Link to="/help" className="bottomlink1 side-link  list-group-item list-group-item-action">
-                            <i className="bi bi-heart-fill"></i>
-                            Help
-                        </Link>
+                            <i class="bi bi-patch-question-fill"></i>
+                            Help                  </Link>
                     </div>
 
                     <div className="sidenavlink">
 
                         <Link to="/login" className="bottomlink2 side-link  list-group-item list-group-item-action">
-                            <i className="bi bi-heart-fill"></i>
-                            Log Out
+                            <i class="bi bi-arrow-right-square-fill"></i>                            Log Out
                         </Link>
 
                     </div>

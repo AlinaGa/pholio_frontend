@@ -46,3 +46,23 @@ button {
 .modaltitle {
     color: white;
 }
+
+/* Change the background color and width of the scrollbar track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Change the color and rounded corner of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+
+/* Hide the scrollbar corner */
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}

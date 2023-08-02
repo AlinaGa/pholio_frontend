@@ -10,6 +10,7 @@ import RegisterPage from "./pages/landingpage/RegisterPage";
 import GalleryDetail from "./pages/photographerpages/GalleryDetail";
 import GalleryList from "./pages/photographerpages/GalleryList";
 import ClientList from "./pages/photographerpages/ClientList";
+import Dashboard from "./pages/photographerpages/Dashboard";
 
 // Client pages
 import LoginClient from "./pages/clientpages/LoginClient";
@@ -39,6 +40,8 @@ function App() {
         {/* <Route path="/lp" element={<LandingPage />} /> */}
 
         <Route path="/login" element={<PhotographerLoginPage />} />
+        <Route path="/home" element={<Dashboard />} />
+
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/galleries" element={<GalleryList />} />
         <Route path="/clients" element={<ClientList />} />

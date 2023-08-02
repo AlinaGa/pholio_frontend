@@ -21,7 +21,10 @@ const ClientNavbar = () => {
                         <NavLink eventKey={1} as={Link} to="/logout">LogOut</NavLink> */}
 
             {/* Prototype without real Linking */}
-            <div className="clientnavleft">{/* <button>back</button> */}</div>
+            <div className="clientnavleft"><NavLink to="/">
+              <Navbar.Brand className="pholiologo fw-bold fs-1" href="#home">
+                Pholio
+              </Navbar.Brand></NavLink></div>
             <div className="clientnavmiddle">My Photographer</div>
             <div className="clientnavright">
               {/* make toggle cart button a component and add it here  */}

@@ -8,9 +8,6 @@ h1 {
 }
 
 /* navbar section */
-.NavBackground {
-    background-color: var(--darkpurple);
-}
 
 
 /* LandingNavbar */
@@ -33,7 +30,7 @@ h1 {
 }
 
 .landingnavleft {
-    width: 33%;
+    width: 36.5%;
     align-items: center;
 }
 
@@ -43,14 +40,14 @@ h1 {
 }
 
 .landingnavright {
-    width: 33%;
+    width: 36.5%;
     display: flex;
     flex: row;
     justify-content: flex-end;
 }
 
 .landingnavright button {
-    padding: 8px;
+    padding: 8px 15px;
     text-decoration: none;
     background-color: var(--purple);
 }
@@ -60,6 +57,25 @@ h1 {
     color: white;
     font-size: 1.08rem;
     font-weight: 400;
+}
+
+.navbtnnormal {
+    font-weight: 400;
+}
+
+.navbtnnormal:hover {
+    background-color: var(--darkpurple);
+    color: white;
+}
+
+.navbtndark {
+    background-color: var(--darkpurple) !important;
+    color: white;
+}
+
+.navbtndark:hover {
+    background-color: var(--purple) !important;
+    color: black;
 }
 
 .register {
@@ -143,7 +159,7 @@ h1 {
     text-align: center;
     align-items: center;
     margin-top: 55px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 
@@ -171,8 +187,10 @@ h1 {
 
 .introtext p {
     padding: 2rem;
-    margin: 40px;
+    margin: 50px;
 }
+
+
 
 .startnowbtn {
     background-color: var(--darkpurple);
@@ -184,8 +202,9 @@ h1 {
     margin: 35px 0 0 0;
 }
 
-.startnowbtn :hover {
+.startnowbtn:hover {
     background-color: var(--purple);
+    color: black;
 }
 
 
@@ -206,12 +225,13 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 500px;
+    min-height: 500px;
 
 }
 
 .featurette {
     margin-top: 50px;
+    margin-bottom: 50px;
     position: relative;
     z-index: 1;
     display: flex;
@@ -223,7 +243,7 @@ h1 {
 
 .feature {
     display: flex;
-    max-width: 350px;
+    max-width: 400px;
     background-color: white;
     margin: 20px;
     border-radius: 10px;
@@ -238,8 +258,13 @@ h1 {
 
 .feature h4 {
     font-family: 'Merienda';
+    font-size: 1.8rem;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.feature p {
+    font-size: 1.3rem;
 }
 
 .body-desc {
